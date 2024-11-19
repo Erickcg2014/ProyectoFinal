@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Usuario Dashboard - Imagix</title>
+    <link rel="stylesheet" href="../frontEnd/css/menu/menu.css" />
+    <link rel="stylesheet" href="./usuario-dashboard.css" />
+    <link rel="stylesheet" href="./estadisticas.css"/>
+    <link rel="stylesheet" href="./ideas.css"/>
+    <link rel="stylesheet" href="./retos-activos.css"/>
+    <link rel="stylesheet" href="./css/frase.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.7/index.global.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  </head>
+  <body>
+    <!-- Menú Superior -->
+    <header class="top-header">
+      <button id="menu-toggle" class="menu-icon">&#9776;</button>
+      <img src="../img/imagix.png" alt="Imagix Logo" class="logo" />
+      <div class="location-container">
+        <span class="location-icon">📍</span>
+        <div class="dropdown-wrapper">
+          <select id="sede-select" class="sede-dropdown">
+            <option value="">Cargando sedes...</option>
+          </select>
+          <span class="dropdown-icon">▼</span>
+        </div>
+      </div>
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="Buscar retos, ideas..." class="search-bar" />
+        <span id="search-button" class="search-icon" role="button">🔍</span>
+    </div>
+    
+      <div class="user-info">
+        <img class="profile-pic" src="../img/ProfilePicture.png" alt="Foto de Perfil" />
+        <div class="user-greeting" id="nombre-usuario">Hola👋🏼, Usuario</div>
+      </div>
+    </header>
+
+    <!-- Menú Lateral -->
+    <div class="barra-de-navegacin" id="side-menu">
+      <button id="close-menu" class="close-icon">&times;</button>
+      <div class="logo-container">
+        <img src="../img/imagix.png" alt="Logo Imagix" class="side-logo" />
+      </div>
+      <nav class="menu-items">
+        <a href="./usuario-dashboard.html" class="menu-item">
+          <img class="img" src="../img/home.png" alt="Home" />
+          <span>Home</span>
+          <img class="arrow-icon" src="../img/rightarrow.png" />
+        </a>
+        <a href="../Retos/verMisRetos-Dashboard.html" class="menu-item">
+          <img class="img" src="../img/Retos.png" alt="Retos" />
+          <span>Retos</span>
+          <img class="arrow-icon" src="../img/rightarrow.png" />
+        </a>
+        <a href="../RetosMiArea/explorarRetos-dashboard.html" class="menu-item">
+          <img class="img" src="../img/Retos-area.png" alt="Retos de mi sede" />
+          <span>Retos por área</span>
+          <img class="arrow-icon" src="../img/rightarrow.png" />
+        </a>
+        <a href="../Sedes/index.html" class="menu-item">
+          <img class="img" src="../img/SesionesIdeacion.png" alt="Sesiones de ideación" />
+          <span>Sesiones de ideación</span>
+          <img class="arrow-icon" src="../img/rightarrow.png" />
+        </a>
+        <a href="../SesionesDeIdeación/sesionesDeIdeacion.html" class="menu-item">
+          <img class="img" src="../img/sedes.png" alt="Sedes" />
+          <span>Sedes</span>
+          <img class="arrow-icon" src="../img/rightarrow.png" />
+        </a>
+      </nav>
+      <div class="activity-container">
+        <span class="label">Actividad</span>
+        <span class="label-2">+25%</span>
+      </div>
+      <div class="logout-container">
+        <a href="#" class="logout-item">
+          <img class="frame-2" src="../img/logout.png" alt="Logout" />
+          <span>Logout</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="tarjeta-bienvenida">
+      <img src="../img/dia-mundial-de-la-creatividad-y-la-innovacion.gif" alt="Bienvenida GIF" class="gif-bienvenida">
+      <h2 id="bienvenida-evaluador">Hola evaluador, bienvenido a Imagix</h2>
+      <p id="frase-motivacional">Aquí aparecerá una frase motivacional.</p>
+    </div>
+
+    <!-- Contenido Principal del Dashboard -->
+    <div class="usuario-dashboard">
+      <h2 class="section-title">SEDES ACTIVAS</h2>
+      <div id="map"></div>
+      <button id="volver-sede" class="boton oculto">Focalizar mi sede</button>
+
+      <!-- Contenedor de Estadísticas -->
+        <h2 class="section-title">Estadísticas de la sede</h2>
+        <div class="graficas-grid">
+            <div class="grafica-item fade-in">
+                <canvas id="graficaRetosActivos"></canvas>
+                <p class="grafica-descripcion">Retos Activos</p>
+            </div>
+            <div class="grafica-item fade-in">
+                <canvas id="graficaRetosPorMes"></canvas>
+                <p class="grafica-descripcion">Retos por Mes</p>
+            </div>
+            <div class="grafica-item fade-in">
+                <canvas id="graficaIdeasInnovadoras"></canvas>
+                <p class="grafica-descripcion">Ideas Innovadoras</p>
+            </div>
+          </div>
+    
+    
+    
+        <!-- Carrusel de Retos Activos -->
+        <div class="carrusel-retos">
+          <h2 class="section-title">Retos Activos</h2>
+          <div class="swiper-container retos-swiper">
+              <div class="swiper-wrapper" id="retos-container">
+                  <div class="swiper-slide">
+                      <div class="tarjeta">
+                          <h3>Reto 1</h3>
+                          <p class="descripcion">Descripción breve del reto.</p>
+                          <p class="cargo">Creador: Juan Pérez</p>
+                      </div>
+                  </div>
+                  <!-- Añadir más slides aquí -->
+              </div>
+              <!-- Botones de Navegación -->
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+          </div>
+      </div>
+      
+
+    <!-- Carrusel de Ideas Innovadoras -->
+    <div class="carrusel-ideas">
+      <h2 class="section-title">Ideas Innovadoras</h2>
+      <div class="ideas-swiper-container">
+          <div class="ideas-swiper-wrapper" id="ideas-container">
+              <div class="ideas-swiper-slide">
+                  <div class="ideas-tarjeta">
+                      <h3>Idea 1</h3>
+                      <p class="ideas-descripcion">Descripción breve de la idea innovadora.</p>
+                      <p class="ideas-cargo">Creador: María Gómez</p>
+                  </div>
+              </div>
+          </div>
+          <div class="ideas-swiper-button-next"></div>
+          <div class="ideas-swiper-button-prev"></div>
+      </div>
+  </div>
+    
+
+      <h2 class="section-title">Mi Calendario</h2>
+      <div id="calendar" class="calendar-container"></div>
+
+      <!-- Apartado de Tareas -->
+      <div class="tareas" id="tareas-container">
+        <h2>Tareas</h2>
+        <div class="tarea">
+          <div class="tarea-icon">📋</div>
+          <p>Carolina ha solicitado tu asesoría</p>
+        </div>
+        <div class="tarea">
+          <div class="tarea-icon">⚙️</div>
+          <p>Actualiza tu perfil</p>
+        </div>
+        <div class="tarea">
+          <div class="tarea-icon">🏆</div>
+          <p>Nuevo reto asignado</p>
+        </div>
+        <div class="tarea">
+          <div class="tarea-icon">📅</div>
+          <p>Nueva reunión programada</p>
+        </div>
+      </div>
+
+      <!-- Botones -->
+      <div class="botones">
+        <button class="boton" onclick="location.href='../Retos/crearRetoConSolucion.html'">Crear Reto</button>
+        <button class="boton">Invitar</button>
+      </div>
+    </div>
+
+    <!-- Vista Reducida para Otra Sede -->
+    <div id="dashboard-reducido" class="dashboard-seccion oculto">
+      <div id="map" class="map-container"></div>
+
+      <div class="estadisticas" id="estadisticas-reducidas">
+        <h2>Estadísticas</h2>
+        <p>Cargando estadísticas...</p>
+      </div>
+
+      <div class="carrusel-ideas">
+        <h2>Ideas Innovadoras</h2>
+        <div class="ideas-container" id="ideas-reducidas-container">
+          <p>Cargando ideas innovadoras...</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.7/index.global.min.js"></script>
+    <script src="../frontEnd/js/menu.js"></script>
+    <script src="./usuario-dashboard.js"></script>
+    <script src="./calendar.js"></script>
+    <script src="./js/frase.js"></script>
+    <script src ="./graficas.js"></script>
+    <script src="../Retos/js/filtroBusqueda.js"></script>
+  </body>
+</html>

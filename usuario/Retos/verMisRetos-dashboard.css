@@ -1,0 +1,303 @@
+.dashboard-ver-mis {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  width: 80%; /* Ajusta el ancho al 80% de la pantalla */
+  max-width: 1000px;
+  margin: auto; /* Centra el contenedor */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.button-2 {
+  background-color: #4A148C;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-2:hover {
+  background-color: #6a1b9a;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.search-bar button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.ordenar-por {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Estilos para la tabla */
+/* Estilos para la tabla */
+.retos-table {
+  width: 90%; /* Ajustar para que no ocupe todo el ancho */
+  margin: auto; /* Centrar la tabla */
+  margin-bottom: 30px; /* Más espacio debajo de la tabla */
+  border-collapse: collapse;
+  overflow: hidden; /* Mantiene los bordes redondeados */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    background-color: #fff;
+}
+
+.retos-table th, .retos-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.retos-table th {
+  background-color: #f7f9fc;
+  color: #333;
+  font-weight: bold;
+}
+
+.retos-table tbody tr:hover {
+  background-color: #f1f3f5;
+  transition: background-color 0.3s;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px; /* Aumentamos el espacio superior */
+  margin-bottom: 50px; /* Espacio adicional inferior para evitar conflicto con la barra de desplazamiento */
+}
+
+.pagination button {
+  background-color: #4A148C;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin: 0 5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pagination button.active {
+  background-color: #6a1b9a;
+}
+
+.pagination button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+/* Estilos para el estado */
+.status {
+  padding: 5px 10px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.status.activo {
+  background-color: #4CAF50;
+}
+
+.status.inactivo {
+  background-color: #F44336;
+}
+
+.status.revision {
+  background-color: #FFEB3B;
+  color: #333;
+}
+
+/* Contenedor de búsqueda y ordenación */
+.search-sort-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 15px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Input de búsqueda */
+#search-input {
+  flex: 1;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+}
+
+#search-input:focus {
+  border-color: #4A148C;
+  outline: none;
+}
+
+/* Dropdown de ordenación */
+#sort-dropdown {
+  width: 200px;
+  padding: 10px 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: white;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+#sort-dropdown:hover {
+  border-color: #4A148C;
+}
+
+/* Hover en el contenedor de búsqueda */
+.search-sort-container:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Botones de acción */
+.edit-btn, .delete-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.edit-btn img, .delete-btn img {
+  width: 24px;
+  height: 24px;
+}
+
+.button-crear {
+  background-color: #4A148C;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-crear:hover {
+  background-color: #6a1b9a;
+}
+
+
+/*-----FILTROS BOTONES----------*/
+.filter-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filter-buttons {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.filter-buttons {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.filter-buttons {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.filter-btn {
+  background-color: #4A148C; 
+  color: white;
+  border: none;
+  padding: 12px 24px; 
+  margin: 0 10px;
+  border-radius: 8px; 
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out; 
+}
+
+.filter-btn:hover {
+  background-color: #6A1B9A; 
+  transform: scale(1.05); 
+}
+
+.filter-btn.active {
+  background-color: #7B1FA2; 
+  color: white;
+  font-weight: bold;
+  border: 2px solid #4A148C; 
+  box-shadow: 0px 8px 15px rgba(122, 72, 221, 0.4); 
+  transform: scale(1.1); 
+}
+
+.filter-btn:not(.active) {
+  opacity: 1; 
+  background-color: #ffffff; 
+  color: #4A148C; 
+  border: 2px solid #4A148C; 
+  box-shadow: none; 
+}
+
+
+.pagination button {
+  background-color: #ddd;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pagination button.active {
+  background-color: #4A148C;
+  color: white;
+}
+
+.mensaje-sin-retos {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 20px;
+}
+
+/*-----EMAIL----*/
+.email-link {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.email-link:hover {
+  color: darkblue;
+}
+

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asociación mapa</title>
+    <link rel="stylesheet" href="./asociacion-map.css">
+    <link rel="stylesheet" href="../menu/menu.css"> <!-- Archivo CSS del menú -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Leaflet CSS para el mapa -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<!-- Menú Superior -->
+<header class="top-header">
+  <button id="menu-toggle" class="menu-icon">&#9776;</button>
+  <img src="../img/imagix.webp" alt="Imagix Logo" class="logo" />
+  <div class="location-container">
+    <span class="location-icon">📍</span>
+    <div class="dropdown-wrapper">
+      <select id="sede-select" class="sede-dropdown">
+        <option value="">Cargando sedes...</option>
+      </select>
+      <span class="dropdown-icon">▼</span>
+    </div>
+  </div>
+  <div class="search-container">
+    <input type="text" placeholder="Buscar retos, ideas..." class="search-bar" />
+    <span class="search-icon">🔍</span>
+  </div>
+  <div class="user-info">
+    <img class="profile-pic" src="../img/pfp.png" alt="Foto de Perfil" />
+    <div class="user-greeting" id="nombre-usuario">Hola👋🏼, Usuario</div>
+  </div>
+</header>
+
+<!-- Menú Lateral -->
+<div class="barra-de-navegacin" id="side-menu">
+  <button id="close-menu" class="close-icon">&times;</button>
+  <div class="logo-container">
+    <img src="../img/imagix.png" alt="Logo Imagix" class="side-logo" />
+  </div>
+  <nav class="menu-items">
+    <a href="../Home/dashboard-principal.html" class="menu-item">
+      <img class="img" src="../img/home.png" alt="Home" />
+      <span>Home</span>
+      <img class="arrow-icon" src="../img/rightarrow.png" />
+    </a>
+    <a href="../Retos/dashboard_retos.html" class="menu-item">
+      <img class="img" src="../img/Retos.png" alt="Retos" />
+      <span>Retos de mi sede</span>
+      <img class="arrow-icon" src="../img/rightarrow.png" />
+    </a>
+    <a href="../RetosPorArea/dashboard_retos_por_area.html" class="menu-item">
+        <img class="img" src="../img/Retos.png" alt="Retos" />
+        <span>Retos por área</span>
+        <img class="arrow-icon" src="../img/rightarrow.png" />
+      </a>
+    <a href="../MisRetosAsignados/retos_asignados.html" class="menu-item">
+      <img class="img" src="../img/Retos-area.png" alt="Retos de mi sede" />
+      <span>Mis retos asignados</span>
+      <img class="arrow-icon" src="../img/rightarrow.png" />
+    </a>
+    <a href="../RetosClasificados/retos_clasificados.html" class="menu-item">
+        <img class="img" src="../img/Retos-area.png" alt="Retos de mi sede" />
+        <span>Retos clasificados</span>
+        <img class="arrow-icon" src="../img/rightarrow.png" />
+      </a>
+    <a href="../SesionesIdeacion/sesiones_de_ideacion.html" class="menu-item">
+      <img class="img" src="../img/SesionesIdeacion.png" alt="Sesiones de ideación" />
+      <span>Sesiones de ideación</span>
+      <img class="arrow-icon" src="../img/rightarrow.png" />
+    </a>
+    <a href="../Repositorio/repositorio.html" class="menu-item">
+        <img class="img" src="../img/Retos-area.png" alt="Retos de mi sede" />
+        <span>Repositorio</span>
+        <img class="arrow-icon" src="../img/rightarrow.png" />
+      </a>
+    <a href="../Sedes/asociacion-map.html" class="menu-item">
+      <img class="img" src="../img/sedes.png" alt="Sedes" />
+      <span>Sedes</span>
+      <img class="arrow-icon" src="../img/rightarrow.png" />
+    </a>
+    <a href="../MiComite/comite-eval.html" class="menu-item">
+        <img class="img" src="../img/SesionesIdeacion.png" alt="Sesiones de ideación" />
+        <span>Mi comite</span>
+        <img class="arrow-icon" src="../img/rightarrow.png" />
+      </a>
+  </nav>
+  <div class="activity-container">
+    <span class="label">Actividad</span>
+    <span class="label-2">+25%</span>
+  </div>
+  <div class="logout-container">
+    <a href="#" class="logout-item">
+      <img class="frame-2" src="../img/logout.png" alt="Logout" />
+      <span>Logout</span>
+    </a>
+  </div>
+</div>
+
+    <div class="container">
+        <!-- Frame general para contener todo -->
+        <section class="frame general-frame">
+            <p class="quote-text">“El éxito no es casualidad, es el resultado de un esfuerzo constante”</p>
+
+            <section class="sedes">
+                <div class="sede">
+                    <h3 class="title">Bucaramanga</h3>
+                    <img src="../img/bucaramanga.png" alt="Bucaramanga">
+                    <div class="content big-content">
+                        <span class="number">2</span>
+                    </div>
+                </div>
+                <div class="sede">
+                    <h3 class="title">Bogotá</h3>
+                    <img src="../img/bogota.png" alt="Bogotá">
+                    <div class="content">
+                        <span class="number">1</span>
+                    </div>
+                </div>
+                <div class="sede">
+                    <h3 class="title">Cúcuta</h3>
+                    <img src="../img/cucuta.png" alt="Cúcuta">
+                    <div class="content">
+                        <span class="number">3</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="frame">
+                <h2 class="frame-title">Estadísticas del año</h2>
+                <div class="chart">
+                    <canvas id="myChart" width="400" height="300"></canvas> <!-- Ajusta el tamaño del gráfico -->
+                </div>
+            </section>              
+
+            <section class="frame">
+                <h2 class="frame-title">SEDES ACTIVAS</h2>
+                <div id="map"></div> <!-- Contenedor del mapa -->
+            </section>
+        </section> <!-- Fin del frame general -->
+    </div>
+
+    <!-- Leaflet JS para el mapa -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+
+    <script src="../menu/menu.js"></script>
+    <script src="../menu/usuario-dashboard.js"></script>
+</body>
+</html>

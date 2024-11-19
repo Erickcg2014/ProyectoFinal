@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+
+/* Estilo general */
+body {
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+  background-color: #f5f5f5;
+  overflow-x: hidden;
+}
+
+/* Menú Superior */
+.top-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px; /* Reducido para un diseño más compacto */
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.menu-icon {
+  font-size: 40px; /* Proporcionalmente más pequeño */
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 15px;
+  color: #333;
+  transition: transform 0.2s;
+}
+
+.menu-icon:hover {
+  transform: scale(1.1);
+}
+.location-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Estilo del dropdown */
+.dropdown-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.sede-dropdown {
+  appearance: none;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px 40px 10px 12px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #fff;
+  color: #333;
+  transition: all 0.3s ease;
+  width: 180px;
+}
+
+.sede-dropdown:hover {
+  border-color: #ff4081;
+}
+
+/* Icono del dropdown */
+.dropdown-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 18px;
+  color: #666;
+}
+
+.logo {
+  height: 60px; /* Tamaño ajustado */
+  margin-right: 25px;
+  cursor: pointer;
+}
+
+/* Contenedor de ubicación */
+.location-container {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.location-icon {
+  font-size: 24px; /* Tamaño reducido */
+  margin-right: 8px;
+  color: #666;
+}
+
+.location-text {
+  font-size: 20px; /* Texto más pequeño y consistente */
+  font-weight: 700;
+  color: #333;
+}
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 20px;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-greeting {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+
+.dropdown-icon {
+  font-size: 22px;
+  margin-left: 5px;
+  color: #666;
+}
+
+/* Contenedor de búsqueda */
+.search-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  position: relative;
+  max-width: 700px; /* Ancho más compacto */
+}
+
+.search-bar {
+  flex: 1;
+  padding: 15px 55px 15px 25px;
+  border-radius: 30px;
+  border: 1px solid #ddd;
+  background-color: #fafafa;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar:focus {
+  outline: none;
+  border: 1px solid #5932ea;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(89, 50, 234, 0.1);
+}
+
+.search-icon {
+  position: absolute;
+  right: 15px;
+  font-size: 24px;
+  color: #9197b3;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.search-icon:hover {
+  color: #5932ea;
+}
+
+/* Icono de usuario */
+.user-icon {
+  font-size: 24px; /* Tamaño ajustado */
+  margin-left: 20px;
+  color: #5932ea; /* Cambiado a #5932ea como solicitado */
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.user-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Fondo Oscuro */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+  z-index: 999;
+}
+
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Menú Lateral */
+.barra-de-navegacin {
+  position: fixed;
+  top: 0;
+  left: -300px; /* Ajustado para un diseño compacto */
+  width: 300px;
+  height: 100%;
+  background-color: #ffffff;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+  transition: left 0.3s ease-in-out;
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.barra-de-navegacin.open {
+  left: 0;
+}
+
+/* Contenedor del Logo con botón de cierre */
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 25px 0;
+}
+
+.side-logo {
+  width: 150px; /* Tamaño ajustado */
+  height: auto;
+}
+
+.close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px; /* Tamaño ajustado */
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+  transition: transform 0.2s;
+}
+
+.close-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Elementos del Menú */
+.menu-items {
+  flex-grow: 1;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 25px; /* Espaciado reducido */
+  font-size: 18px;
+  font-weight: 400;
+  color: #444;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.menu-item img {
+  margin-right: 12px;
+  width: 32px;
+  height: 32px;
+}
+
+.menu-item .text-wrapper {
+  flex: 1;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.menu-item:hover {
+  background-color: #f0f0f5;
+}
+
+/* Íconos del menú */
+.img {
+  width: 35px;
+  height: 35px;
+  margin-right: 12px;
+  filter: grayscale(50%);
+  transition: filter 0.2s;
+}
+
+.img:hover {
+  filter: grayscale(0%);
+}
+
+.arrow-icon {
+  width: 16px;
+  height: 16px;
+  margin-left: auto;
+}
+
+/* Actividad */
+.activity-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 25px;
+  background-color: #f9f9f9;
+  font-size: 18px;
+}
+
+.label {
+  color: #84828a;
+}
+
+.label-2 {
+  color: #5932ea;
+}
+
+/* Logout */
+.logout-container {
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid #e0e0e0;
+}
+
+.logout-item {
+  display: flex;
+  align-items: center;
+  color: #84828a;
+  font-size: 20px;
+}
+
+.frame-2 {
+  width: 28px;
+  height: 28px;
+  margin-right: 10px;
+}
+
+#gerencia-select {
+  width: 50%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+  font-size: 16px;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+#gerencia-select:focus {
+  border-color: #4A148C;
+  outline: none;
+}
+
+#promotor-asignado {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #4A148C;
+}

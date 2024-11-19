@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../css/loginSinGuardar.css" />
+    <title>Login - Imagix</title>
+  </head>
+  <body>
+    <div class="login">
+      <div class="left">
+        <img class="background-image" src="../img/generativo.png" alt="Fondo Generativo" />
+        <div class="logo-social-login">
+          <img class="vector" src="../img/vector.png" alt="Icono Vector" />
+          <div class="puedes-hacer-magia-wrapper">
+            <p class="puedes-hacer-magia">
+              Puedes hacer magia con tus puntos Imagix
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="right">
+        <img class="imagix" src="../img/imagix.png" alt="Logo Imagix" />
+        <div class="wrapper">
+          <div class="element">
+            <div class="text">
+              <div class="text-wrapper">Bienvenido</div>
+              <p class="p">Inicia sesión con tu usuario asignado.</p>
+            </div>
+            <div class="form">
+              <div class="name">
+                <img class="iconly-bold-profile" src="../img/user-icon.png" alt="Ícono Usuario" />
+                <input type="text" id="username" placeholder="Usuario" />
+              </div>
+              <div class="mobile-number">
+                <img class="border" src="../img/password.png" alt="Ícono Contraseña" />
+                <input type="password" id="password" placeholder="Contraseña" />
+              </div>
+            </div>
+          </div>
+
+          <div class="segmented-control">
+            <div class="segment usuario selected" data-role="usuario">Usuario</div>
+            <div class="segment promotor" data-role="promotor">Promotor</div>
+            <div class="segment otro" data-role="otro" id="btn-otro">Otro</div>
+        </div>
+        
+        <!-- Sub-segmentos para roles adicionales (Cliente Interno y Evaluador) -->
+        <div class="otros-roles" id="otros-roles" style="display: none; margin-top: 10px;">
+            <div class="sub-segment cliente-interno" data-role="cliente_interno">Cliente Interno</div>
+            <div class="sub-segment evaluador" data-role="evaluador">Evaluador</div>
+            <div class="sub-segment volver" data-role="volver">Volver</div>
+        </div>
+        
+
+          <div class="element-nd">
+            <div class="button-base iniciar-sesion">
+              <div class="text-2">Iniciar Sesión</div>
+              <img class="chevron-right" src="../img/image.png" alt="Ícono Chevron" />
+            </div>
+          </div>
+
+          <div class="register-link">
+            <p>¿Aún no tienes cuenta? <a href="registro.html">Regístrate aquí</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/loginVerificacion.js"></script>
+    <script src="../js/login.js"></script>
+  </body>
+</html>

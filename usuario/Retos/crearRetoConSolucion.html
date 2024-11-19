@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./crearRetoConSolucion.css" />
+    <link rel="stylesheet" href="../frontEnd/css/menu/menu.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    
+  </head>
+  <body>
+    <header class="top-header">
+      <button id="menu-toggle" class="menu-icon">&#9776;</button>
+      <img src="../img/imagix.png" alt="Imagix Logo" class="logo" />
+      <div class="location-container">
+        <span class="location-icon">📍</span>
+        <div class="dropdown-wrapper">
+          <select id="sede-select" class="sede-dropdown">
+            <option value="">Cargando sedes...</option>
+          </select>
+          <span class="dropdown-icon">▼</span>
+        </div>
+      </div>
+      <div class="search-container">
+        <input type="text" placeholder="Buscar retos, ideas..." class="search-bar" />
+        <span class="search-icon">🔍</span>
+      </div>
+      <div class="user-info">
+        <img class="profile-pic" src="../img/ProfilePicture.png" alt="Foto de Perfil" />
+        <div class="user-greeting" id="nombre-usuario">Hola👋🏼, Usuario</div>
+      </div>
+    </header>
+
+    <!-- Menú Lateral -->
+    <div class="barra-de-navegacin" id="side-menu">
+      <button id="close-menu" class="close-icon">&times;</button>
+      <div class="logo-container">
+        <img src="../img/imagix.png" alt="Logo Imagix" class="side-logo" />
+      </div>
+      <nav class="menu-items">
+        <a href="../Home/usuario-dashboard.html" class="menu-item">
+          <img class="img" src="../img/home.png" alt="Home" />
+          <span>Home</span>
+          <img class="arrow-icon" src="../img/rightarrow.png" />
+        </a>
+        <a href="../Retos/verMisRetos-Dashboard.html" class="menu-item">
+          <img class="img" src="../img/Retos.png" alt="Retos" />
+          <span>Retos</span>
+          <img class="arrow-icon" src="../img/rightarrow.png" />
+        </a>
+        <a href="../RetosMiArea/explorarRetos-dashboard.html" class="menu-item">
+          <img class="img" src="../img/Retos-area.png" alt="Retos por área" />
+          <span>Retos por área</span>
+          <img class="arrow-icon" src="../img/rightarrow.png" />
+        </a>
+        <a href="../Sedes/index.html" class="menu-item">
+          <img class="img" src="../img/SesionesIdeacion.png" alt="Sesiones de ideación" />
+          <span>Sesiones de ideación</span>
+          <img class="arrow-icon" src="../img/rightarrow.png" />
+        </a>
+        <a href="../SesionesDeIdeación/sesionesDeIdeacion.html" class="menu-item">
+          <img class="img" src="../img/sedes.png" alt="Sedes" />
+          <span>Sedes</span>
+          <img class="arrow-icon" src="../img/rightarrow.png" />
+        </a>
+      </nav>
+      <div class="activity-container">
+        <span class="label">Actividad</span>
+        <span class="label-2">+25%</span>
+      </div>
+      <div class="logout-container">
+        <a href="#" class="logout-item">
+          <img class="frame-2" src="../img/logout.png" alt="Logout" />
+          <span>Logout</span>
+        </a>
+      </div>
+    </div>
+    
+    <form id="crear-reto-form" enctype="multipart/form-data" onsubmit="enviarFormulario(event)">
+      <div class="formulario-crear">
+          <div class="header">
+              <button class="volver-btn" type="button" onclick="history.back()">Volver</button>
+              <h2>Detalles del reto</h2>
+              <select id="tipo-solucion" onchange="mostrarSeccionSolucion()">
+                  <option value="sinSolucion">Sin Solución</option>
+                  <option value="conSolucion">Con Solución</option>
+              </select>
+          </div>
+  
+
+          <div class="estado-coincidencia">
+            <h3>Estado de Coincidencia</h3>
+            <p class="descripcion-coincidencia">
+                Esta barra es para verificar si el reto que estás creando coincide con alguno ya existente.
+            </p>
+            <p class="descripcion-coincidencia">
+                Escribe los detalles de tu reto, y revisaremos automáticamente por ti. &#128513;
+            </p>
+            <div class="progress-bar">
+                <div class="track">
+                    <div id="barra-progreso" class="filled" style="width: 0%;"></div>
+                </div>
+                <span id="porcentaje-coincidencia" class="percentage">0%</span>
+              </div>
+            <p id="mensaje-coincidencia"></p>
+        </div>
+        
+          <div class="campo">
+              <h3>Título del reto</h3>
+              <input 
+                  type="text" 
+                  placeholder="Escribe un título de no más de 3 palabras" 
+                  id="titulo-reto" 
+                  oninput="validarTitulo()" 
+              />
+              <small id="titulo-error" class="error-text"></small>
+          </div>
+  
+          <div class="campo">
+              <h3>Descripción</h3>
+              <textarea id="descripcion" placeholder="Ingresa la descripción..."></textarea>
+          </div>
+  
+          <div class="campo">
+              <h3>Beneficios</h3>
+              <textarea id="beneficios" placeholder="Describe los beneficios..."></textarea>
+          </div>
+  
+          <div class="campo" id="seccion-solucion" style="display: none;">
+              <h3>Solución Propuesta</h3>
+              <textarea id="solucion" placeholder="Describe la solución propuesta..."></textarea>
+          </div>
+  
+          <select id="gerencia-select" onchange="asignarPromotor()">
+              <option value="">Seleccione Gerencia</option>
+              <option value="1">Ventas</option>
+              <option value="2">Marketing</option>
+              <option value="3">Finanzas</option>
+              <option value="4">Producción</option>
+              <option value="5">DHCO</option>
+          </select>
+
+          <div id="contenedor-cargos-sugeridos" style="display: none;">
+            <h3 id="titulo-cargos">Ve digitando la información y te ayudaremos a escoger el cliente interno más adecuado para ti</h3>
+            <p id="mensaje-cargos"></p>
+            <div id="cargos-sugeridos-lista" style="display: flex; gap: 10px; margin-top: 10px;"></div>
+            
+            <select id="buscar-otro-cargo" style="display: none;" onchange="mostrarOverlayCargo(this.value)">
+                <option value="">Seleccionar otro cliente interno</option>
+                <!-- Opciones de cargos se llenarán dinámicamente en el código JavaScript -->
+            </select>
+        </div>
+
+        <input type="hidden" id="id-cliente-interno" name="idClienteInterno">
+
+        
+        <!-- Overlay para mostrar la información del cargo seleccionado -->
+        <div id="overlay-cargo" style="display: none;">
+          <div class="overlay-content">
+              <h3 id="overlay-titulo-cargo"></h3>
+              <p id="overlay-descripcion-cargo"></p>
+              <button type="button" onclick="escogerCargo()">Escoger este cargo</button>
+              <button type="button" onclick="cerrarOverlayCargo()">Cancelar</button>
+          </div>
+        </div>
+
+
+        <div id="contenedor-seleccion-final" style="display: none; margin-top: 20px;">
+          <h3>Cliente Interno Seleccionado</h3>
+          <div class="cliente-seleccionado">
+              <h4 id="seleccion-titulo-cargo"></h4>
+              <p><strong>Nombre:</strong> <span id="seleccion-nombre-cliente"></span></p>
+              <p><strong>Sede:</strong> <span id="seleccion-sede-cliente"></span></p>
+              <p><strong>Correo:</strong> <span id="seleccion-correo-cliente"></span></p>
+          </div>
+      </div>
+        
+        
+  
+          <div id="nombre-promotor" class="promotor-info"></div>
+  
+          <div class="campo-presentacion">
+              <h3>Presentación propuesta / PDF</h3>
+  
+              <button id="btn-cargar" class="btn-cargar" type="button" onclick="document.getElementById('archivo-pdf').click()">
+                  Cargar aquí tu presentación
+              </button>
+  
+              <input type="file" id="archivo-pdf" accept="application/pdf" onchange="mostrarArchivoCargado()" style="display:none;" />
+  
+              <div id="archivo-info" class="archivo-info oculto">
+                  <span id="archivo-nombre"></span>
+                  <button class="btn-abrir-pdf" type="button" onclick="abrirPDF()">Ver PDF</button>
+              </div>
+  
+              <div class="campo-enlace">
+                  <label for="enlace-canva">O agrega un enlace de Canva:</label>
+                  <input type="url" id="enlace-canva" placeholder="https://canva.com/..." />
+              </div>
+          </div>
+  
+          <button class="enviar-btn" type="submit">Enviar</button>
+        </div>
+  </form>
+  
+
+    
+    <script src="../Home/usuario-dashboard.js"></script>
+    <script src="../frontEnd/js/menu.js"></script>
+    <script src="./crearReto.js"></script>
+</body>
+</html>

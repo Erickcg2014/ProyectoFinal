@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/rechazarretos.css">
+  <title>Formulario de Rechazo de Retos</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="header-content">
+        <h1>Hola Erick 👋, promotor de: <span class="highlight">INNOVACIÓN</span></h1>
+        <input type="text" placeholder="Buscar retos o usuarios">
+        <img src="img/perfil.png" alt="Foto de perfil" class="profile-pic">
+      </div>
+      <button class="back-button">Volver</button>
+    </header>
+
+    <section class="details">
+      <h2>Detalles del reto</h2>
+      <div class="cards-container">
+        <div class="card">
+          <h3>EL RETO ES: SIN SOLUCIÓN</h3>
+          <p>Descripción: Los servicios actuales en la sede de Bucaramanga están siendo muy costosos, por lo que tenemos que realizar una solución lo más pronto posible.</p>
+        </div>
+        <div class="card">
+          <h3>EJE QUE AFECTA: INNOVACIÓN</h3>
+          <p>Beneficios: Podemos reducir costos de gran manera y optimizar de una manera efectiva los gastos que se hacen diariamente.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="optional">
+      <h3>¿De casualidad el usuario se equivocó de eje de innovación?</h3>
+      <label><input type="radio" name="equivoco" value="si"> Sí</label>
+      <label><input type="radio" name="equivoco" value="no"> No</label>
+    </section>
+
+    <section class="input-group">
+      <label>Descripción del rechazo</label>
+      <textarea></textarea>
+    </section>
+
+    <section class="input-group">
+      <label>Sugerencias adicionales</label>
+      <textarea></textarea>
+    </section>
+
+    <section class="acceptance">
+      <h3>Cumplimiento de la aceptación</h3>
+      <div class="acceptance-content">
+        <input type="checkbox" id="acceptance-checkbox">
+        <label for="acceptance-checkbox">Acepto como promotor que la idea presentada no tiene un nivel de importancia significativo, por lo que al eliminar este reto, me comprometo a notificar al usuario correspondiente con unas razones aceptables del debido rechazo. Asimismo, juro que evalué correctamente y di una sugerencia adicional para facilitar la implementación de mejores ideas que contribuyan a los objetivos de la organización.</label>
+      </div>
+    </section>
+
+    <button class="submit">Enviar</button>
+  </div>
+</body>
+</html>

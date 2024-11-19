@@ -1,0 +1,110 @@
+:root {
+  --iris-80: rgba(120, 121, 241, 1);
+  --iris-100: rgba(93, 95, 239, 1);
+  --gray: rgba(58, 58, 73, 1);
+  --light-blue: #8fc9f0;
+  --light-gray: #e0e0e0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f8f8;
+  color: var(--gray);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.frame {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1.5fr;
+  column-gap: 80px;
+  padding: 0;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  max-width: 1000px;
+  margin: 20px auto 0;
+}
+
+.column {
+  padding: 10px;
+}
+
+.user-details {
+  margin-left: 30px;
+}
+
+h4 {
+  margin-bottom: 2px;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.photo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-small {
+  width: 380px;
+  height: auto;
+  max-width: none;
+  margin-top: 20px;
+}
+
+/* Configuración general de la tabla */
+table {
+  width: 100%;
+  margin: 20px 0;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 15px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+th {
+  border-bottom: 2px solid #e0e0e0;
+}
+
+tbody tr {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* Estilos para las etiquetas de estado */
+.reciente, .antiguo {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.reciente {
+  border: 1px solid darkgreen;
+  background-color: rgb(194, 247, 194);
+  color: darkgreen;
+}
+
+.antiguo {
+  border: 1px solid darkred;
+  background-color: rgb(250, 197, 197);
+  color: darkred;
+}
+
+#myChart {
+  width: 100% !important; 
+  height: 300px; 
+  margin-top: 20px; 
+}

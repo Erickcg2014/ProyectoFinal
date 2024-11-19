@@ -1,0 +1,30 @@
+{
+  "name": "proyecto-cremhelado",
+  "version": "1.0.0",
+  "description": "Proyecto para la gestión de la innovación en Crem Helado",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "innovacion",
+    "crem helado",
+    "nodejs"
+  ],
+  "author": "Tu Nombre o Equipo",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "bcryptjs": "^2.4.3",
+    "cosine-similarity": "^1.0.1",
+    "dotenv": "^16.4.5",
+    "exceljs": "^4.4.0",
+    "express": "^4.21.1",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.1",
+    "natural": "^8.0.1",
+    "pg": "^8.13.1",
+    "proyecto-cremhelado": "file:"
+  }
+}

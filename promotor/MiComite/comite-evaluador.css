@@ -1,0 +1,1210 @@
+:root {
+    --iris-80: rgba(120, 121, 241, 1);
+    --iris-100: rgba(93, 95, 239, 1);
+    --gray: rgba(58, 58, 73, 1);
+    --label-light-secondary: rgba(60, 60, 67, 0.6);
+    --light-indigo: rgba(116, 89, 217, 1);
+    --iris-60: rgba(165, 166, 246, 1);
+  }
+  
+
+.comit-evaluador {
+    background-color: #fafbff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .comit-evaluador .div {
+    background-color: #fafbff;
+    width: 2424px;
+    height: 1198px;
+    position: relative;
+  }
+  
+  .comit-evaluador .frame {
+    display: flex;
+    width: 1516px;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 29px;
+    left: 344px;
+  }
+  
+  .comit-evaluador .hola-erick-promotor {
+    position: relative;
+    width: 502px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: transparent;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .comit-evaluador .text-wrapper {
+    color: #000000;
+  }
+  
+  .comit-evaluador .span {
+    color: #fe0404;
+  }
+  
+  .comit-evaluador .frame-2 {
+    display: flex;
+    width: 480px;
+    align-items: center;
+    gap: 32px;
+    position: relative;
+  }
+  
+  .comit-evaluador .group {
+    position: relative;
+    width: 346px;
+    height: 40px;
+  }
+  
+  .comit-evaluador .overlap-group {
+    position: relative;
+    width: 344px;
+    height: 40px;
+    background-color: #fdfdfd;
+    border-radius: 8px;
+  }
+  
+  .comit-evaluador .text-wrapper-2 {
+    position: absolute;
+    top: 12px;
+    left: 46px;
+    font-family: "Manrope-Regular", Helvetica;
+    font-weight: 400;
+    color: #a39f9f;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .comit-evaluador .search-normal {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 12px;
+    left: 13px;
+  }
+  
+  .comit-evaluador .img {
+    position: relative;
+    width: 24px;
+    height: 24px;
+  }
+  
+  .comit-evaluador .ellipse {
+    position: relative;
+    width: 48px;
+    height: 48px;
+  }
+  
+  .comit-evaluador .overlap-wrapper {
+    position: absolute;
+    width: 1979px;
+    height: 879px;
+    top: 161px;
+    left: 342px;
+    transform: rotate(-0.21deg);
+  }
+  
+  .comit-evaluador .overlap {
+    position: relative;
+    height: 856px;
+    background-color: #ffffff;
+    border-radius: 32.49px;
+    box-shadow: 1.48px 2.95px 4.43px #5d5fef66;
+  }
+  
+  .comit-evaluador .bulk-action {
+    position: absolute;
+    width: 173px;
+    height: 56px;
+    top: 154px;
+    left: 62px;
+    background-color: #ffffff;
+    border-radius: 10.34px;
+    border: 1.48px solid;
+    border-color: #e5e5e5;
+  }
+  
+  .comit-evaluador .text-wrapper-3 {
+    position: absolute;
+    top: 13px;
+    left: 7px;
+    font-family: "Inter-Medium", Helvetica;
+    font-weight: 500;
+    color: var(--iris-80);
+    font-size: 20.7px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .comit-evaluador .iconly-light-arrow {
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    top: 13px;
+    left: 127px;
+  }
+  
+  .comit-evaluador .iconly-light-arrow-2 {
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    top: 0;
+    left: 0;
+    transform: rotate(0.21deg);
+  }
+  
+  .comit-evaluador .overlap-group-wrapper {
+    position: absolute;
+    width: 266px;
+    height: 56px;
+    top: 155px;
+    left: 236px;
+  }
+  
+  .comit-evaluador .overlap-group-2 {
+    position: relative;
+    width: 264px;
+    height: 58px;
+    top: -1px;
+    left: 2px;
+  }
+  
+  .comit-evaluador .rectangle {
+    width: 264px;
+    height: 57px;
+    left: 0;
+    transform: rotate(0.21deg);
+    position: absolute;
+    top: 0;
+  }
+  
+  .comit-evaluador .eva-search-outline {
+    position: absolute;
+    width: 22px;
+    height: 27px;
+    top: 16px;
+    left: 16px;
+    transform: rotate(0.21deg);
+  }
+  
+  .comit-evaluador .div-wrapper {
+    display: flex;
+    width: 164px;
+    align-items: center;
+    justify-content: space-around;
+    gap: 314.54px;
+    position: absolute;
+    top: 15px;
+    left: 72px;
+  }
+  
+  .comit-evaluador .text-wrapper-4 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.48px;
+    margin-left: -7.54px;
+    margin-right: -7.54px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #868690;
+    font-size: 20.7px;
+    letter-spacing: 0.30px;
+    line-height: 26.6px;
+    white-space: nowrap;
+  }
+  
+  .comit-evaluador .text-wrapper-5 {
+    position: absolute;
+    height: 59px;
+    top: 37px;
+    left: 62px;
+    font-family: "Work Sans-Bold", Helvetica;
+    font-weight: 700;
+    color: var(--iris-100);
+    font-size: 50.2px;
+    letter-spacing: -1.00px;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .comit-evaluador .text-wrapper-6 {
+    position: absolute;
+    height: 59px;
+    top: 235px;
+    left: 70px;
+    font-family: "Work Sans-Bold", Helvetica;
+    font-weight: 700;
+    color: var(--iris-100);
+    font-size: 50.2px;
+    letter-spacing: -1.00px;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .comit-evaluador .group-2 {
+    position: absolute;
+    width: 283px;
+    height: 38px;
+    top: 759px;
+    left: 876px;
+  }
+  
+  .comit-evaluador .overlap-2 {
+    position: relative;
+    width: 281px;
+    height: 38px;
+  }
+  
+  .comit-evaluador .file-details {
+    position: absolute;
+    width: 281px;
+    height: 38px;
+    top: 0;
+    left: 0;
+  }
+  
+  .comit-evaluador .separator {
+    position: absolute;
+    width: 62px;
+    height: 1px;
+    top: 37px;
+    left: 217px;
+    background-color: var(--iris-60);
+    border-radius: 33.96px;
+  }
+  
+  .comit-evaluador .overlap-group-3 {
+    position: absolute;
+    width: 62px;
+    height: 22px;
+    top: 7px;
+    left: 217px;
+  }
+  
+  .comit-evaluador .chevron {
+    position: absolute;
+    width: 12px;
+    height: 7px;
+    top: 0;
+    left: 50px;
+  }
+  
+  .comit-evaluador .text-wrapper-7 {
+    position: absolute;
+    width: 55px;
+    height: 22px;
+    top: 0;
+    left: 0;
+    font-family: "Work Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: var(--gray);
+    font-size: 19.2px;
+    text-align: center;
+    letter-spacing: -0.38px;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .comit-evaluador .text-wrapper-8 {
+    position: absolute;
+    height: 23px;
+    top: 9px;
+    left: 30px;
+    font-family: "Work Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: var(--gray);
+    font-size: 19.2px;
+    letter-spacing: -0.38px;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .comit-evaluador .frame-3 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22.15px;
+    position: absolute;
+    top: 1px;
+    left: 102px;
+  }
+  
+  .comit-evaluador .vector {
+    position: relative;
+    width: 4.78px;
+    height: 7.13px;
+  }
+  
+  .comit-evaluador .group-3 {
+    position: relative;
+    width: 37.44px;
+    height: 35.44px;
+  }
+  
+  .comit-evaluador .overlap-group-4 {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    background-color: var(--iris-100);
+    border-radius: 17.72px;
+    box-shadow: 0px 5.91px 5.91px #4676fb40;
+  }
+  
+  .comit-evaluador .text-wrapper-9 {
+    position: absolute;
+    top: 6px;
+    left: 13px;
+    font-family: "Work Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 19.2px;
+    text-align: center;
+    letter-spacing: -0.38px;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .comit-evaluador .overlap-3 {
+    position: absolute;
+    width: 1462px;
+    height: 344px;
+    top: 358px;
+    left: 296px;
+  }
+  
+  .comit-evaluador .group-4 {
+    position: absolute;
+    width: 1461px;
+    height: 339px;
+    top: 0;
+    left: 0;
+    transform: rotate(0.21deg);
+  }
+  
+  .comit-evaluador .group-5 {
+    position: absolute;
+    width: 1157px;
+    height: 29px;
+    top: 0;
+    left: 57px;
+  }
+  
+  .comit-evaluador .text-wrapper-10 {
+    position: absolute;
+    width: 174px;
+    top: 0;
+    left: 0;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #b5b7c0;
+    font-size: 20px;
+    letter-spacing: -0.20px;
+    line-height: normal;
+  }
+  
+  .comit-evaluador .text-wrapper-11 {
+    position: absolute;
+    width: 50px;
+    top: 0;
+    left: 260px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #b5b7c0;
+    font-size: 20px;
+    letter-spacing: -0.20px;
+    line-height: normal;
+  }
+  
+  .comit-evaluador .text-wrapper-12 {
+    position: absolute;
+    width: 130px;
+    top: 0;
+    left: 457px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #b5b7c0;
+    font-size: 20px;
+    letter-spacing: -0.20px;
+    line-height: normal;
+  }
+  
+  .comit-evaluador .text-wrapper-13 {
+    position: absolute;
+    width: 112px;
+    top: 0;
+    left: 693px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #b5b7c0;
+    font-size: 20px;
+    letter-spacing: -0.20px;
+    line-height: normal;
+  }
+  
+  .comit-evaluador .text-wrapper-14 {
+    position: absolute;
+    width: 142px;
+    top: 0;
+    left: 1005px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #b5b7c0;
+    font-size: 20px;
+    letter-spacing: -0.20px;
+    line-height: normal;
+  }
+  
+  .comit-evaluador .group-6 {
+    position: absolute;
+    width: 1347px;
+    height: 29px;
+    top: 83px;
+    left: 57px;
+  }
+  
+  .comit-evaluador .text-wrapper-15 {
+    position: absolute;
+    width: 113px;
+    top: 0;
+    left: 0;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #292d32;
+    font-size: 18px;
+    letter-spacing: -0.18px;
+    line-height: normal;
+  }
+  
+  .comit-evaluador .text-wrapper-16 {
+    position: absolute;
+    width: 121px;
+    top: 0;
+    left: 260px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #292d32;
+    font-size: 18px;
+    letter-spacing: -0.18px;
+    line-height: normal;
+  }
+  
+  .comit-evaluador .text-wrapper-17 {
+    position: absolute;
+    width: 120px;
+    top: 0;
+    left: 485px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #292d32;
+    font-size: 18px;
+    letter-spacing: -0.18px;
+    line-height: normal;
+  }
+  
+  .comit-evaluador .text-wrapper-18 {
+    position: absolute;
+    width: 235px;
+    top: 0;
+    left: 693px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #292d32;
+    font-size: 18px;
+    letter-spacing: -0.18px;
+    line-height: normal;
+  }
+  
+  .comit-evaluador .text-wrapper-19 {
+    position: absolute;
+    width: 78px;
+    top: 0;
+    left: 1005px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #292d32;
+    font-size: 18px;
+    letter-spacing: -0.18px;
+    line-height: normal;
+  }
+  
+  .comit-evaluador .frame-4 {
+    display: flex;
+    width: 121px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 4px 12px;
+    position: absolute;
+    top: 0;
+    left: 1217px;
+    background-color: #5932ea;
+    border-radius: 4px;
+  }
+  
+  .comit-evaluador .text-wrapper-20 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: -0.14px;
+    line-height: normal;
+  }
+  
+  .comit-evaluador .group-7 {
+    position: absolute;
+    width: 1092px;
+    height: 29px;
+    top: 179px;
+    left: 57px;
+  }
+  
+  .comit-evaluador .text-wrapper-21 {
+    width: 112px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #292d32;
+    font-size: 18px;
+    letter-spacing: -0.18px;
+    line-height: normal;
+  }
+  
+  .comit-evaluador .text-wrapper-22 {
+    position: absolute;
+    width: 119px;
+    top: 0;
+    left: 260px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #292d32;
+    font-size: 18px;
+    letter-spacing: -0.18px;
+    line-height: normal;
+  }
+  
+  .comit-evaluador .text-wrapper-23 {
+    width: 42px;
+    left: 506px;
+    position: absolute;
+    top: 0;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #292d32;
+    font-size: 18px;
+    letter-spacing: -0.18px;
+    line-height: normal;
+  }
+  
+  .comit-evaluador .text-wrapper-24 {
+    position: absolute;
+    width: 241px;
+    top: 0;
+    left: 693px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #292d32;
+    font-size: 18px;
+    letter-spacing: -0.18px;
+    line-height: normal;
+  }
+  
+  .comit-evaluador .text-wrapper-25 {
+    position: absolute;
+    width: 77px;
+    top: 0;
+    left: 1005px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #292d32;
+    font-size: 18px;
+    letter-spacing: -0.18px;
+    line-height: normal;
+  }
+  
+  .comit-evaluador .group-8 {
+    position: absolute;
+    width: 1121px;
+    height: 29px;
+    top: 276px;
+    left: 57px;
+  }
+  
+  .comit-evaluador .text-wrapper-26 {
+    position: absolute;
+    width: 186px;
+    top: 0;
+    left: 0;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #292d32;
+    font-size: 18px;
+    letter-spacing: -0.18px;
+    line-height: normal;
+  }
+  
+  .comit-evaluador .text-wrapper-27 {
+    position: absolute;
+    width: 94px;
+    top: 0;
+    left: 260px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #292d32;
+    font-size: 18px;
+    letter-spacing: -0.18px;
+    line-height: normal;
+  }
+  
+  .comit-evaluador .text-wrapper-28 {
+    width: 42px;
+    left: 501px;
+    position: absolute;
+    top: 0;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #292d32;
+    font-size: 18px;
+    letter-spacing: -0.18px;
+    line-height: normal;
+  }
+  
+  .comit-evaluador .text-wrapper-29 {
+    position: absolute;
+    width: 231px;
+    top: 0;
+    left: 693px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #292d32;
+    font-size: 18px;
+    letter-spacing: -0.18px;
+    line-height: normal;
+  }
+  
+  .comit-evaluador .text-wrapper-30 {
+    width: 106px;
+    top: 0;
+    left: 1005px;
+    color: #292d32;
+    font-size: 18px;
+    letter-spacing: -0.18px;
+    position: absolute;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    line-height: normal;
+  }
+  
+  .comit-evaluador .line {
+    width: 1461px;
+    top: 48px;
+    left: 0;
+    position: absolute;
+    height: 1px;
+    transform: rotate(-0.21deg);
+    object-fit: cover;
+  }
+  
+  .comit-evaluador .line-2 {
+    width: 1340px;
+    top: 145px;
+    left: 60px;
+    position: absolute;
+    height: 1px;
+    transform: rotate(-0.21deg);
+    object-fit: cover;
+  }
+  
+  .comit-evaluador .line-3 {
+    width: 1340px;
+    top: 241px;
+    left: 61px;
+    position: absolute;
+    height: 1px;
+    transform: rotate(-0.21deg);
+    object-fit: cover;
+  }
+  
+  .comit-evaluador .line-4 {
+    width: 1340px;
+    top: 338px;
+    left: 61px;
+    position: absolute;
+    height: 1px;
+    transform: rotate(-0.21deg);
+    object-fit: cover;
+  }
+  
+  .comit-evaluador .frame-5 {
+    top: 269px;
+    display: flex;
+    width: 116px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 4px 12px;
+    position: absolute;
+    left: 1279px;
+    background-color: #5932ea;
+    border-radius: 4px;
+    transform: rotate(0.21deg);
+  }
+  
+  .comit-evaluador .frame-6 {
+    top: 181px;
+    display: flex;
+    width: 116px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 4px 12px;
+    position: absolute;
+    left: 1279px;
+    background-color: #5932ea;
+    border-radius: 4px;
+    transform: rotate(0.21deg);
+  }
+  
+  .comit-evaluador .overlap-4 {
+    position: absolute;
+    width: 306px;
+    height: 1198px;
+    top: 0;
+    left: 0;
+  }
+  
+  .comit-evaluador .barra-de-navegacin {
+    position: absolute;
+    width: 306px;
+    height: 1198px;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    box-shadow: 0px 10px 60px #e1ecf880;
+  }
+  
+  .comit-evaluador .list-menu-wrapper {
+    position: absolute;
+    width: 250px;
+    height: 46px;
+    top: 614px;
+    left: 33px;
+    background-color: #5932ea;
+    border-radius: 8px;
+  }
+  
+  .comit-evaluador .list-menu {
+    position: relative;
+    width: 195px;
+    height: 21px;
+    top: 12px;
+    left: 47px;
+  }
+  
+  .comit-evaluador .text-wrapper-31 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: -0.14px;
+    line-height: normal;
+  }
+  
+  .comit-evaluador .chevron-right {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 2px;
+    left: 177px;
+  }
+  
+  .comit-evaluador .overlap-5 {
+    position: absolute;
+    width: 250px;
+    height: 46px;
+    top: 382px;
+    left: 28px;
+    background-color: #ffffff;
+    border-radius: 8px;
+  }
+  
+  .comit-evaluador .list-menu-2 {
+    position: absolute;
+    width: 195px;
+    height: 21px;
+    top: 13px;
+    left: 49px;
+  }
+  
+  .comit-evaluador .text-wrapper-32 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #9197b3;
+    font-size: 14px;
+    letter-spacing: -0.14px;
+    line-height: normal;
+  }
+  
+  .comit-evaluador .element-icon-stock {
+    top: 12px;
+    left: 11px;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+  }
+  
+  .comit-evaluador .list-menu-3 {
+    position: absolute;
+    width: 231px;
+    height: 24px;
+    top: 139px;
+    left: 39px;
+  }
+  
+  .comit-evaluador .img-2 {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 0;
+    left: 0;
+  }
+  
+  .comit-evaluador .text-wrapper-33 {
+    top: 1px;
+    left: 38px;
+    color: #9197b3;
+    font-size: 14px;
+    letter-spacing: -0.14px;
+    position: absolute;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    line-height: normal;
+  }
+  
+  .comit-evaluador .chevron-right-2 {
+    top: 2px;
+    left: 213px;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+  }
+  
+  .comit-evaluador .list-menu-4 {
+    position: absolute;
+    width: 233px;
+    height: 24px;
+    top: 203px;
+    left: 39px;
+  }
+  
+  .comit-evaluador .text-wrapper-34 {
+    position: absolute;
+    top: 2px;
+    left: 38px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #9197b3;
+    font-size: 14px;
+    letter-spacing: -0.14px;
+    line-height: normal;
+  }
+  
+  .comit-evaluador .chevron-right-3 {
+    top: 4px;
+    left: 215px;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+  }
+  
+  .comit-evaluador .list-menu-5 {
+    position: absolute;
+    width: 233px;
+    height: 24px;
+    top: 267px;
+    left: 39px;
+  }
+  
+  .comit-evaluador .overlap-6 {
+    position: absolute;
+    width: 233px;
+    height: 24px;
+    top: 331px;
+    left: 39px;
+  }
+  
+  .comit-evaluador .list-menu-6 {
+    position: absolute;
+    width: 233px;
+    height: 24px;
+    top: 0;
+    left: 0;
+  }
+  
+  .comit-evaluador .list-menu-7 {
+    position: absolute;
+    width: 231px;
+    height: 24px;
+    top: 0;
+    left: 0;
+  }
+  
+  .comit-evaluador .list-menu-8 {
+    position: absolute;
+    width: 233px;
+    height: 24px;
+    top: 452px;
+    left: 39px;
+  }
+  
+  .comit-evaluador .list-menu-9 {
+    position: absolute;
+    width: 195px;
+    height: 21px;
+    top: 511px;
+    left: 80px;
+  }
+  
+  .comit-evaluador .list-menu-10 {
+    position: absolute;
+    width: 236px;
+    height: 24px;
+    top: 566px;
+    left: 39px;
+  }
+  
+  .comit-evaluador .text-wrapper-35 {
+    position: absolute;
+    top: 3px;
+    left: 41px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #9197b3;
+    font-size: 14px;
+    letter-spacing: -0.14px;
+    line-height: normal;
+  }
+  
+  .comit-evaluador .chevron-right-4 {
+    top: 5px;
+    left: 218px;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+  }
+  
+  .comit-evaluador .element-icon {
+    top: 511px;
+    left: 39px;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+  }
+  
+  .comit-evaluador .overlap-group-5 {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    top: 3px;
+    left: 3px;
+  }
+  
+  .comit-evaluador .path {
+    position: absolute;
+    width: 18px;
+    height: 9px;
+    top: 0;
+    left: 0;
+  }
+  
+  .comit-evaluador .path-2 {
+    top: 7px;
+    position: absolute;
+    width: 18px;
+    height: 7px;
+    left: 0;
+  }
+  
+  .comit-evaluador .path-3 {
+    top: 11px;
+    position: absolute;
+    width: 18px;
+    height: 7px;
+    left: 0;
+  }
+  
+  .comit-evaluador .imagix {
+    position: absolute;
+    width: 226px;
+    height: 100px;
+    top: 11px;
+    left: 32px;
+    object-fit: cover;
+  }
+  
+  .comit-evaluador .overlap-7 {
+    position: absolute;
+    width: 250px;
+    height: 80px;
+    top: 925px;
+    left: 28px;
+    background-image: url(./img/union.svg);
+    background-size: 100% 100%;
+  }
+  
+  .comit-evaluador .label {
+    position: absolute;
+    top: 28px;
+    left: 101px;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: var(--label-light-secondary);
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 24px;
+    white-space: nowrap;
+  }
+  
+  .comit-evaluador .label-2 {
+    position: absolute;
+    top: 30px;
+    left: 195px;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: var(--light-indigo);
+    font-size: 13px;
+    text-align: right;
+    letter-spacing: 0;
+    line-height: 18px;
+    white-space: nowrap;
+  }
+  
+  .comit-evaluador .element {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 10px;
+    left: 24px;
+    object-fit: cover;
+  }
+  
+  .comit-evaluador .frame-7 {
+    display: flex;
+    width: 275px;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 165px 10px 10px;
+    position: absolute;
+    top: 1130px;
+    left: 24px;
+    border-radius: 8px;
+  }
+  
+  .comit-evaluador .text-wrapper-36 {
+    position: relative;
+    width: fit-content;
+    font-family: "Manrope-Medium", Helvetica;
+    font-weight: 500;
+    color: #84828a;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .comit-evaluador .group-wrapper {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    top: 624px;
+    left: 42px;
+  }
+  
+  .comit-evaluador .overlap-group-6 {
+    position: absolute;
+    width: 16px;
+    height: 8px;
+    top: 4px;
+    left: 4px;
+  }
+  
+  .comit-evaluador .ellipse-2 {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top: 0;
+    left: 4px;
+    border-radius: 4px;
+    border: 2px solid;
+    border-color: #ffffff;
+  }
+  
+  .comit-evaluador .ellipse-3 {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    top: 2px;
+    left: 10px;
+  }
+  
+  .comit-evaluador .ellipse-4 {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    top: 2px;
+    left: 0;
+  }
+  
+  .comit-evaluador .overlap-8 {
+    position: absolute;
+    width: 20px;
+    height: 7px;
+    top: 13px;
+    left: 2px;
+  }
+  
+  .comit-evaluador .subtract {
+    position: absolute;
+    width: 9px;
+    height: 6px;
+    top: 0;
+    left: 11px;
+  }
+  
+  .comit-evaluador .subtract-2 {
+    position: absolute;
+    width: 9px;
+    height: 6px;
+    top: 0;
+    left: 0;
+  }
+  
+  .comit-evaluador .rectangle-2 {
+    width: 12px;
+    height: 7px;
+    left: 4px;
+    position: absolute;
+    top: 0;
+  }
+  

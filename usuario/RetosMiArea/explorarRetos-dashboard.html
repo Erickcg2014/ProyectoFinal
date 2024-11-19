@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="styleguide.css" />
+    <link rel="stylesheet" href="/Proyecto-CremHelado/public/Bryan/css/explorarRetos-dashboard.css" />
+  </head>
+  <body>
+
+    <body>
+      <!-- Menú Superior -->
+      <header class="top-header">
+        <button id="menu-toggle" class="menu-icon">&#9776;</button>
+        <img src="../img/imagix.png" alt="Imagix Logo" class="logo" />
+        <div class="location-container">
+          <span class="location-icon">📍</span>
+          <div class="dropdown-wrapper">
+            <select id="sede-select" class="sede-dropdown">
+              <option value="">Cargando sedes...</option>
+            </select>
+            <span class="dropdown-icon">▼</span>
+          </div>
+        </div>
+        <div class="search-container">
+          <input type="text" placeholder="Buscar retos, ideas..." class="search-bar" />
+          <span class="search-icon">🔍</span>
+        </div>
+        <div class="user-info">
+          <img class="profile-pic" src="../img/ProfilePicture.png" alt="Foto de Perfil" />
+          <div class="user-greeting" id="nombre-usuario">Hola👋🏼, Usuario</div>
+        </div>
+      </header>
+  
+      <!-- Menú Lateral -->
+      <div class="barra-de-navegacin" id="side-menu">
+        <button id="close-menu" class="close-icon">&times;</button>
+        <div class="logo-container">
+          <img src="../img/imagix.png" alt="Logo Imagix" class="side-logo" />
+        </div>
+        <nav class="menu-items">
+          <a href="./usuario-dashboard.html" class="menu-item">
+            <img class="img" src="../img/home.png" alt="Home" />
+            <span>Home</span>
+            <img class="arrow-icon" src="../img/rightarrow.png" />
+          </a>
+          <a href="../Retos/verMisRetos-Dashboard.html" class="menu-item">
+            <img class="img" src="../img/Retos.png" alt="Retos" />
+            <span>Retos</span>
+            <img class="arrow-icon" src="../img/rightarrow.png" />
+          </a>
+          <a href="../RetosMiArea/explorarRetos-dashboard.html" class="menu-item">
+            <img class="img" src="../img/Retos-area.png" alt="Retos de mi sede" />
+            <span>Retos por área</span>
+            <img class="arrow-icon" src="../img/rightarrow.png" />
+          </a>
+          <a href="../Sedes/index.html" class="menu-item">
+            <img class="img" src="../img/SesionesIdeacion.png" alt="Sesiones de ideación" />
+            <span>Sesiones de ideación</span>
+            <img class="arrow-icon" src="../img/rightarrow.png" />
+          </a>
+          <a href="../SesionesDeIdeación/sesionesDeIdeacion.html" class="menu-item">
+            <img class="img" src="../img/sedes.png" alt="Sedes" />
+            <span>Sedes</span>
+            <img class="arrow-icon" src="../img/rightarrow.png" />
+          </a>
+        </nav>
+        <div class="activity-container">
+          <span class="label">Actividad</span>
+          <span class="label-2">+25%</span>
+        </div>
+        <div class="logout-container">
+          <a href="#" class="logout-item">
+            <img class="frame-2" src="../img/logout.png" alt="Logout" />
+            <span>Logout</span>
+          </a>
+        </div>
+      </div>
+      
+    <div class="dashboard-explorar">
+      <div class="div">
+        <div class="overlap">
+          <div class="group">
+            <div class="overlap-group">
+              <div class="text-wrapper">Buscar</div>
+              <img class="search" src="/Proyecto-CremHelado/public/Bryan/img/flechitaAbajo.png" />
+            </div>
+          </div>
+          <img class="rectangle" src="/Proyecto-CremHelado/public/Bryan/img/rectangulo4.png" />
+          <p class="mostrando-datos-to">Mostrando datos 1 to 8 of&nbsp;&nbsp;256K entries</p>
+          <div class="text-wrapper-2">Explorar retos</div>
+          <div class="group-2">
+            <div class="navbar">
+              <div class="text-wrapper-3">Nombre</div>
+              <div class="text-wrapper-4">Area</div>
+              <div class="text-wrapper-5">Importancia</div>
+              <div class="text-wrapper-6">Email Promotor</div>
+              <div class="text-wrapper-7">Sede/Ciudad</div>
+              <div class="text-wrapper-8">Status</div>
+            </div>
+            <div class="navbar-2">
+              <div class="text-wrapper-9">Luis Carlos</div>
+              <div class="text-wrapper-10">Recursos H.</div>
+              <div class="text-wrapper-11">Urgente</div>
+              <div class="text-wrapper-12">luiscarlos@gmail.com</div>
+              <div class="text-wrapper-13">Cúcuta</div>
+              <div class="frame"><div class="text-wrapper-14">Activo</div></div>
+            </div>
+            <div class="navbar-3">
+              <div class="text-wrapper-9">Luz Marina</div>
+              <div class="text-wrapper-10">Producción</div>
+              <div class="text-wrapper-15">Alta</div>
+              <div class="text-wrapper-12">luzmarina@gmail.com</div>
+              <div class="text-wrapper-13">Bogotá</div>
+              <div class="div-wrapper"><div class="text-wrapper-16">Inactivo</div></div>
+            </div>
+            <div class="group-3">
+              <div class="text-wrapper-9">María del carmen</div>
+              <div class="text-wrapper-10">Finanzas</div>
+              <div class="text-wrapper-17">Alta</div>
+              <div class="text-wrapper-12">maria123@gmail.com</div>
+              <div class="text-wrapper-13">Manizales</div>
+              <div class="div-wrapper"><div class="text-wrapper-16">Inactive</div></div>
+            </div>
+            <div class="group-4">
+              <div class="text-wrapper-9">Sandra Milena</div>
+              <div class="text-wrapper-10">Innovación</div>
+              <div class="text-wrapper-18">Media</div>
+              <div class="text-wrapper-12">sandramilena@gmail.com</div>
+              <div class="text-wrapper-13">Pasto</div>
+              <div class="frame"><div class="text-wrapper-14">Active</div></div>
+            </div>
+            <div class="group-5">
+              <div class="text-wrapper-9">Carlos Alberto</div>
+              <div class="text-wrapper-10">Finanzas</div>
+              <div class="text-wrapper-17">Baja</div>
+              <div class="text-wrapper-12">carlosalberto@gmail.com</div>
+              <div class="text-wrapper-13">Medellín</div>
+              <div class="frame-2"><div class="text-wrapper-19">Revisión</div></div>
+            </div>
+            <div class="group-6">
+              <div class="text-wrapper-9">Luis Alberto</div>
+              <div class="text-wrapper-10">Marketing</div>
+              <div class="text-wrapper-20">Baja</div>
+              <div class="text-wrapper-12">luisalberto@gmail.com</div>
+              <div class="text-wrapper-13">Barranquilla</div>
+              <div class="frame-3"><div class="text-wrapper-14">Active</div></div>
+            </div>
+            <div class="group-7">
+              <div class="text-wrapper-9">Luis Eduardo</div>
+              <div class="text-wrapper-10">Contabilidad</div>
+              <div class="text-wrapper-21">Minima</div>
+              <div class="text-wrapper-12">luiseduardo@gmail.com</div>
+              <div class="text-wrapper-13">Pereira</div>
+              <div class="frame-3"><div class="text-wrapper-14">Active</div></div>
+            </div>
+            <div class="group-8">
+              <div class="text-wrapper-9">Jose Antonio</div>
+              <div class="text-wrapper-10">Contabilidad</div>
+              <div class="text-wrapper-22">Mínima</div>
+              <div class="text-wrapper-12">joseantonio@gmail.com</div>
+              <div class="text-wrapper-13">Cali</div>
+              <div class="frame-4"><div class="text-wrapper-16">Inactive</div></div>
+            </div>
+            <img class="line" src="img/line-4.svg" />
+            <img class="img" src="img/line-5.svg" />
+            <img class="line-2" src="img/line-6.svg" />
+            <img class="line-3" src="img/line-7.svg" />
+            <img class="line-4" src="img/line-8.svg" />
+            <img class="line-5" src="img/line-9.svg" />
+            <img class="line-6" src="img/line-10.svg" />
+            <img class="line-7" src="img/line-11.svg" />
+            <img class="line-8" src="img/line-12.svg" />
+          </div>
+          <div class="overlap-wrapper">
+            <div class="overlap-2">
+              <img class="chevron-down" src="/Proyecto-CremHelado/public/Bryan/img/flechitaAbajo.png" />
+              <p class="ordenar-por">
+                <span class="span">Ordenar por: </span> <span class="text-wrapper-23">Importancia</span>
+              </p>
+            </div>
+          </div>
+          <div class="group-9">
+            <div class="frame-5"><div class="text-wrapper-24">1</div></div>
+            <div class="frame-6"><div class="text-wrapper-25">2</div></div>
+            <div class="frame-7"><div class="text-wrapper-25">4</div></div>
+            <div class="frame-8"><div class="text-wrapper-25">40</div></div>
+            <div class="frame-9"><div class="text-wrapper-25">&gt;</div></div>
+            <div class="frame-10"><div class="text-wrapper-25">&lt;</div></div>
+            <div class="text-wrapper-26">...</div>
+            <div class="frame-11"><div class="text-wrapper-25">3</div></div>
+          </div>
+          <div class="overlap-group-wrapper">
+            <div class="overlap-group">
+              <div class="text-wrapper">Buscar</div>
+              <img class="search" src="/Proyecto-CremHelado/public/Bryan/img/lupa.png" />
+            </div>
+          </div>
+        </div>
+        <div class="overlap-3">
+          <img class="chevron-right" src="img/chevron-right-3.svg" />
+          <img class="chevron-right" src="img/chevron-right-4.svg" />
+          <div class="barra-de-navegacin">
+            <div class="list-menu-wrapper">
+              <div class="list-menu">
+                <img class="img-2" src="/Proyecto-CremHelado/public/Bryan/img/retosarea2.png" />
+                <div class="retos-por-rea">Retos de mi área</div>
+                <img class="chevron-right-2" src="/Proyecto-CremHelado/public/Bryan/img/flechitaHome.png" />
+              </div>
+            </div>
+            <div class="list-menu-2">
+              <img class="img-2" src="/Proyecto-CremHelado/public/Bryan/img/logohome1.png" />
+              <div class="text-wrapper-27">Home</div>
+              <img class="chevron-right-3" src="/Proyecto-CremHelado/public/Bryan/img/Flechita.png" />
+            </div>
+            <div class="list-menu-3">
+              <img class="img-2" src="/Proyecto-CremHelado/public/Bryan/img/RetosLogo.png" />
+              <div class="text-wrapper-28">Retos</div>
+              <img class="chevron-right-2" src="/Proyecto-CremHelado/public/Bryan/img/Flechita.png" />
+            </div>
+            <div class="list-menu-4">
+              <img class="img-2" src="/Proyecto-CremHelado/public/Bryan/img/Ideacion.png" />
+              <div class="text-wrapper-28">Sesiones de ideación</div>
+              <img class="chevron-right-2" src="/Proyecto-CremHelado/public/Bryan/img/Flechita.png" />
+            </div>
+            <div class="list-menu-5">
+              <img class="img-2" src="/Proyecto-CremHelado/public/Bryan/img/sedes.png" />
+              <div class="text-wrapper-29">Sedes</div>
+              <img class="chevron-right-4" src="/Proyecto-CremHelado/public/Bryan/img/Flechita.png" />
+            </div>
+            <img class="imagix" src="/Proyecto-CremHelado/public/Bryan/img/image1.png" />
+            <div class="overlap-4">
+              <div class="label">Actividad</div>
+              <div class="label-2">+25%</div>
+              <img class="element" src="/Proyecto-CremHelado/public/Bryan/img/actividad.png" />
+            </div>
+            <div class="frame-12">
+              <img class="img-3" src="/Proyecto-CremHelado/public/Bryan/img/Logout.png" />
+              <div class="text-wrapper-30">Logout</div>
+            </div>
+          </div>
+        </div>
+        <div class="frame-13">
+          <div class="text-wrapper-31">Hola Erick 👋🏼,</div>
+          <div class="frame-14">
+            <div class="group-10">
+              <div class="overlap-group-2">
+                <div class="text-wrapper-32">Buscar retos o usuarios</div>
+                <img class="search-normal" src="/Proyecto-CremHelado/public/Bryan/img/lupa.png" />
+              </div>
+            </div>
+            <img class="img-3" src="/Proyecto-CremHelado/public/Bryan/img/campana.png" />
+            <img class="ellipse" src="/Proyecto-CremHelado/public/Bryan/img/ProfilePicture.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

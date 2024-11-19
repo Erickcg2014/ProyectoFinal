@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="./reto-comite.css">
+  <link rel="stylesheet" href="../menu/menu.css">
+  
+  <title>Reto Comité</title>
+</head>
+<body>
+<!-- Menú Superior -->
+<header class="top-header">
+  <button id="menu-toggle" class="menu-icon">&#9776;</button>
+  <img src="../img/imagix.webp" alt="Imagix Logo" class="logo" />
+  <div class="location-container">
+    <span class="location-icon">📍</span>
+    <div class="dropdown-wrapper">
+      <select id="sede-select" class="sede-dropdown">
+        <option value="">Cargando sedes...</option>
+      </select>
+      <span class="dropdown-icon">▼</span>
+    </div>
+  </div>
+  <div class="search-container">
+    <input type="text" placeholder="Buscar retos, ideas..." class="search-bar" />
+    <span class="search-icon">🔍</span>
+  </div>
+  <div class="user-info">
+    <img class="profile-pic" src="../img/pfp.png" alt="Foto de Perfil" />
+    <div class="user-greeting" id="nombre-usuario">Hola👋🏼, Usuario</div>
+  </div>
+</header>
+
+<!-- Menú Lateral -->
+<div class="barra-de-navegacin" id="side-menu">
+  <button id="close-menu" class="close-icon">&times;</button>
+  <div class="logo-container">
+    <img src="../img/imagix.png" alt="Logo Imagix" class="side-logo" />
+  </div>
+  <nav class="menu-items">
+    <a href="../Home/dashboard-principal.html" class="menu-item">
+      <img class="img" src="../img/home.png" alt="Home" />
+      <span>Home</span>
+      <img class="arrow-icon" src="../img/rightarrow.png" />
+    </a>
+    <a href="../Retos/dashboard_retos.html" class="menu-item">
+      <img class="img" src="../img/Retos.png" alt="Retos" />
+      <span>Retos de mi sede</span>
+      <img class="arrow-icon" src="../img/rightarrow.png" />
+    </a>
+    <a href="../RetosPorArea/dashboard_retos_por_area.html" class="menu-item">
+        <img class="img" src="../img/Retos.png" alt="Retos" />
+        <span>Retos por área</span>
+        <img class="arrow-icon" src="../img/rightarrow.png" />
+      </a>
+    <a href="../MisRetosAsignados/retos_asignados.html" class="menu-item">
+      <img class="img" src="../img/Retos-area.png" alt="Retos de mi sede" />
+      <span>Mis retos asignados</span>
+      <img class="arrow-icon" src="../img/rightarrow.png" />
+    </a>
+    <a href="../RetosClasificados/retos_clasificados.html" class="menu-item">
+        <img class="img" src="../img/Retos-area.png" alt="Retos de mi sede" />
+        <span>Retos clasificados</span>
+        <img class="arrow-icon" src="../img/rightarrow.png" />
+      </a>
+    <a href="../SesionesIdeacion/sesiones_de_ideacion.html" class="menu-item">
+      <img class="img" src="../img/SesionesIdeacion.png" alt="Sesiones de ideación" />
+      <span>Sesiones de ideación</span>
+      <img class="arrow-icon" src="../img/rightarrow.png" />
+    </a>
+    <a href="../Repositorio/repositorio.html" class="menu-item">
+        <img class="img" src="../img/Retos-area.png" alt="Retos de mi sede" />
+        <span>Repositorio</span>
+        <img class="arrow-icon" src="../img/rightarrow.png" />
+      </a>
+    <a href="../Sedes/asociacion-map.html" class="menu-item">
+      <img class="img" src="../img/sedes.png" alt="Sedes" />
+      <span>Sedes</span>
+      <img class="arrow-icon" src="../img/rightarrow.png" />
+    </a>
+    <a href="../MiComite/comite-eval.html" class="menu-item">
+        <img class="img" src="../img/SesionesIdeacion.png" alt="Sesiones de ideación" />
+        <span>Mi comite</span>
+        <img class="arrow-icon" src="../img/rightarrow.png" />
+      </a>
+  </nav>
+  <div class="activity-container">
+    <span class="label">Actividad</span>
+    <span class="label-2">+25%</span>
+  </div>
+  <div class="logout-container">
+    <a href="#" class="logout-item">
+      <img class="frame-2" src="../img/logout.png" alt="Logout" />
+      <span>Logout</span>
+    </a>
+  </div>
+</div>
+  <div class="container">
+    <div class="frame">
+      <div class="column user-details">
+        <h2>Detalles del usuario</h2>
+        <div class="user-photo">
+          <div class="photo-container">
+              <img src="../img/usuario-perf.png" alt="Foto del usuario" class="img-small">
+              <button class="view-button">Visualizar foto</button>
+          </div>
+        </div>      
+        <div class="contact-details">
+            <h2>Detalles de contacto</h2>
+            <h4>Phone Number:</h4>
+            <p id="user-phone-number"></p>
+            <h4>Email:</h4>
+            <p id="user-email"></p>
+        </div>
+        <div class="process-details">
+          <h2>Proceso del reto</h2>
+          <ul class="timeline">
+              <li class="completed">Proceso 1</li>
+              <li class="current"><strong>Proceso 2</strong> <span class="current-label">(current)</span></li>
+              <li>Proceso 3</li>
+              <li>Proceso 4</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="column general-info">
+        <h4>Nombre:</h4>
+        <p id="user-name"></p>
+        <h4>Área:</h4>
+        <p id="user-area"></p>
+        <h4>Fecha del reto:</h4>
+        <p id="challenge-date"></p>
+        <h4>Sede:</h4>
+        <p id="challenge-location"></p>
+        <h4>Área dirigida:</h4>
+        <p id="target-area"></p>
+
+        <div class="additional-info">
+            <h2>Información del usuario</h2>
+            <h4>Número de retos presentados:</h4>
+            <p id="submitted-challenges"></p>
+            <h4>Retos en progreso:</h4>
+            <p id="challenges-in-progress"></p>
+            <h4>Soluciones implementadas:</h4>
+            <p id="implemented-solutions"></p>
+            <h4>Promedio impacto de retos:</h4>
+            <p id="average-impact"></p>
+        </div>
+
+        <div class="rating">
+            <h2>CALIFICA:⭐⭐⭐⭐⭐</h2>
+        </div>
+      </div>
+
+      <div class="column challenge-details">
+        <h2>Detalles del reto</h2>
+        <h3 class="highlight-h3">EL RETO ES: <span class="red-text">SIN SOLUCIÓN</span></h3>
+        <div class="challenge-info">
+          <p class="highlight">Descripción:</p>
+          <p id="challenge-description"></p>
+          <button class="nav-button">></button> <!-- Botón de navegación -->
+      </div>
+      <h3 class="highlight-h3">EJE QUE AFECTA: <span class="red-text">INNOVACIÓN</span></h3>
+      <div class="challenge-info-2">
+          <p class="highlight">Beneficios:</p>
+          <p id="challenge-benefits"></p>
+          <button class="nav-button">></button> <!-- Botón de navegación -->
+      </div>      
+      <div class="shared-images">
+        <h2>Imágenes compartidas</h2>
+        <div class="photo-container">
+            <img src="../img/factura.png" alt="Ejemplo de imagen" class="img-small">
+            <button class="view-button">Cargar archivo</button>
+        </div>
+      </div>
+    </div> 
+  </div> 
+
+  <script src="./reto-comite.js" defer></script>
+  <script src="../menu/menu.js"></script>
+  <script src="../menu/usuario-dashboard.js"></script>
+
+</body>
+</html>

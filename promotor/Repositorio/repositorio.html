@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./repositorio.css">
+    <link rel="stylesheet" href="../menu/menu.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    
+    <title>Repositorio de Buenas Prácticas</title>
+</head>
+<body>
+<!-- Menú Superior -->
+<header class="top-header">
+  <button id="menu-toggle" class="menu-icon">&#9776;</button>
+  <img src="../img/imagix.webp" alt="Imagix Logo" class="logo" />
+  <div class="location-container">
+    <span class="location-icon">📍</span>
+    <div class="dropdown-wrapper">
+      <select id="sede-select" class="sede-dropdown">
+        <option value="">Cargando sedes...</option>
+      </select>
+      <span class="dropdown-icon">▼</span>
+    </div>
+  </div>
+  <div class="search-container">
+    <input type="text" placeholder="Buscar retos, ideas..." class="search-bar" />
+    <span class="search-icon">🔍</span>
+  </div>
+  <div class="user-info">
+    <img class="profile-pic" src="../img/pfp.png" alt="Foto de Perfil" />
+    <div class="user-greeting" id="nombre-usuario">Hola👋🏼, Usuario</div>
+  </div>
+</header>
+
+<!-- Menú Lateral -->
+<div class="barra-de-navegacin" id="side-menu">
+  <button id="close-menu" class="close-icon">&times;</button>
+  <div class="logo-container">
+    <img src="../img/imagix.png" alt="Logo Imagix" class="side-logo" />
+  </div>
+  <nav class="menu-items">
+    <a href="../Home/dashboard-principal.html" class="menu-item">
+      <img class="img" src="../img/home.png" alt="Home" />
+      <span>Home</span>
+      <img class="arrow-icon" src="../img/rightarrow.png" />
+    </a>
+    <a href="../Retos/dashboard_retos.html" class="menu-item">
+      <img class="img" src="../img/Retos.png" alt="Retos" />
+      <span>Retos de mi sede</span>
+      <img class="arrow-icon" src="../img/rightarrow.png" />
+    </a>
+    <a href="../RetosPorArea/dashboard_retos_por_area.html" class="menu-item">
+        <img class="img" src="../img/Retos.png" alt="Retos" />
+        <span>Retos por área</span>
+        <img class="arrow-icon" src="../img/rightarrow.png" />
+      </a>
+    <a href="../MisRetosAsignados/retos_asignados.html" class="menu-item">
+      <img class="img" src="../img/Retos-area.png" alt="Retos de mi sede" />
+      <span>Mis retos asignados</span>
+      <img class="arrow-icon" src="../img/rightarrow.png" />
+    </a>
+    <a href="../RetosClasificados/retos_clasificados.html" class="menu-item">
+        <img class="img" src="../img/Retos-area.png" alt="Retos de mi sede" />
+        <span>Retos clasificados</span>
+        <img class="arrow-icon" src="../img/rightarrow.png" />
+      </a>
+    <a href="../SesionesIdeacion/sesiones_de_ideacion.html" class="menu-item">
+      <img class="img" src="../img/SesionesIdeacion.png" alt="Sesiones de ideación" />
+      <span>Sesiones de ideación</span>
+      <img class="arrow-icon" src="../img/rightarrow.png" />
+    </a>
+    <a href="../Repositorio/repositorio.html" class="menu-item">
+        <img class="img" src="../img/Retos-area.png" alt="Retos de mi sede" />
+        <span>Repositorio</span>
+        <img class="arrow-icon" src="../img/rightarrow.png" />
+      </a>
+    <a href="../Sedes/asociacion-map.html" class="menu-item">
+      <img class="img" src="../img/sedes.png" alt="Sedes" />
+      <span>Sedes</span>
+      <img class="arrow-icon" src="../img/rightarrow.png" />
+    </a>
+    <a href="../MiComite/comite-eval.html" class="menu-item">
+        <img class="img" src="../img/SesionesIdeacion.png" alt="Sesiones de ideación" />
+        <span>Mi comite</span>
+        <img class="arrow-icon" src="../img/rightarrow.png" />
+      </a>
+  </nav>
+  <div class="activity-container">
+    <span class="label">Actividad</span>
+    <span class="label-2">+25%</span>
+  </div>
+  <div class="logout-container">
+    <a href="#" class="logout-item">
+      <img class="frame-2" src="../img/logout.png" alt="Logout" />
+      <span>Logout</span>
+    </a>
+  </div>
+</div>
+<div class="container">
+    <div id="frame-container">
+        <h1>REPOSITORIO DE BUENAS PRÁCTICAS</h1>
+        
+        <div class="filters">
+            <select id="status-filter">
+                <option value="">Status</option>
+            </select>
+
+            <div class="input-wrapper">
+                <span class="calendar-icon">📅</span>
+                <input type="text" id="fecha-entrada" placeholder="Fecha de entrada" class="flatpickr">
+            </div>
+
+            <div class="input-wrapper">
+                <span class="calendar-icon">📅</span>
+                <input type="text" id="fecha-salida" placeholder="Fecha de finalización" class="flatpickr">
+            </div>
+
+            <div class="search-wrapper">
+                <input type="text" placeholder="Buscar por usuario">
+                <button class="search-btn">🔍</button>
+            </div>            
+
+            <!-- Botón de Filtrar -->
+            <button class="filter-btn" onclick="applyFilters()">Filtrar</button>
+        </div>
+
+        <table>
+          <thead>
+              <tr>
+                  <th>Status</th>
+                  <th>
+                      Fecha de entrada 
+                      <span onclick="sortByEntryDate()" style="cursor:pointer;">↕</span>
+                  </th>
+                  <th>
+                      Fecha de finalización 
+                      <span onclick="sortByEndDate()" style="cursor:pointer;">↕</span>
+                  </th>
+                  <th>ID</th>
+                  <th>Descripción reto</th>
+                  <th>
+                      Fecha de clasificación 
+                      <span onclick="sortByClassificationDate()" style="cursor:pointer;">↕</span>
+                  </th>
+                  <th>Área</th>
+                  <th>Agendar Sesión</th>
+                  <th>Eliminar</th>
+                  <th>Opciones</th>
+              </tr>
+          </thead>
+          <tbody>
+              <!-- Las filas de la tabla se llenarán dinámicamente -->
+          </tbody>
+      </table>
+      
+        
+        <div class="pagination">
+            <span class="page-arrow" onclick="prevPage()">◂</span>
+            <span id="page-info">1</span>
+            <span class="page-arrow" onclick="nextPage()">▸</span>
+            <input id="rows-per-page" type="number" value="2" onchange="updateRowsPerPage()" min="1">
+        </div>
+    </div>
+</div>
+
+<!-- Incluir JS de flatpickr -->
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="./repositorio.js"></script>
+<script src="../menu/menu.js"></script>
+<script src="../menu/usuario-dashboard.js"></script>
+<script>
+    // Inicializar flatpickr
+    flatpickr('.flatpickr', {
+        dateFormat: "Y-m-d", // Formato de fecha deseado
+    });
+</script>
+</body>
+</html>

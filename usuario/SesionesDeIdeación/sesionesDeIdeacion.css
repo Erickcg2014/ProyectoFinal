@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    max-width: 1600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffff;
+}
+
+h1 {
+    font-size: 28px;
+    color: #6a4cff;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filters select, .filters input[type="date"], .filters input[type="text"], .filter-button {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.filter-button {
+    background-color: #6a4cff;
+    color: white;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+.status {
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: white;
+}
+
+.status.asistida {
+    background-color: #4CAF50;
+}
+
+.status.cancelada {
+    background-color: #F44336;
+}
+
+.status.pendiente {
+    background-color: #FF9800;
+}
+
+.join-button {
+    background-color: #6a4cff;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-button, .delete-button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.edit-button {
+    color: #4CAF50;
+}
+
+.delete-button {
+    color: #F44336;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.pagination input {
+    width: 40px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}

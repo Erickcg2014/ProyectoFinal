@@ -1,0 +1,80 @@
+/* Importar fuente de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+.tarjeta-bienvenida {
+    background-color: #f7f9fc;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin: 20px 0;
+    transition: all 0.3s ease;
+}
+
+.gif-bienvenida {
+    width: 100px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    border-radius: 50%;
+    animation: bounce 1.5s infinite;
+}
+
+#bienvenida-evaluador {
+    font-size: 26px;
+    font-weight: 700;
+    color: #4A148C;
+    margin-bottom: 10px;
+}
+
+#frase-motivacional {
+    font-size: 24px; /* Tamaño de fuente más grande */
+    font-weight: 400;
+    color: #6a1b9a;
+    margin-top: 0;
+    font-style: italic;
+    position: relative;
+    line-height: 1.5;
+}
+
+#frase-motivacional::before,
+#frase-motivacional::after {
+    content: '“'; /* Comillas estilo cita */
+    font-size: 30px; /* Tamaño de las comillas */
+    color: #6a1b9a;
+    font-weight: bold;
+    vertical-align: top;
+}
+
+#frase-motivacional::after {
+    content: '”';
+    vertical-align: bottom;
+}
+
+.tarjeta-bienvenida:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Additional responsive design */
+@media (max-width: 600px) {
+    .tarjeta-bienvenida {
+        padding: 15px;
+    }
+    #bienvenida-evaluador {
+        font-size: 1.5em;
+    }
+    #frase-motivacional {
+        font-size: 1.2em;
+    }
+}

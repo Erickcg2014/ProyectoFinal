@@ -1,0 +1,689 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+
+/* Estilo general */
+body {
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+  background-color: #f5f5f5;
+  overflow-x: hidden;
+}
+
+/* Menú Superior */
+.top-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px; /* Reducido para un diseño más compacto */
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.menu-icon {
+  font-size: 40px; /* Proporcionalmente más pequeño */
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 15px;
+  color: #333;
+  transition: transform 0.2s;
+}
+
+.menu-icon:hover {
+  transform: scale(1.1);
+}
+.location-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Estilo del dropdown */
+.dropdown-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.sede-dropdown {
+  appearance: none;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px 40px 10px 12px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #fff;
+  color: #333;
+  transition: all 0.3s ease;
+  width: 180px;
+}
+
+.sede-dropdown:hover {
+  border-color: #ff4081;
+}
+
+/* Icono del dropdown */
+.dropdown-icon {
+  position: absolute;
+  right: 12px;
+  top: 30%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 18px;
+  color: #666;
+}
+
+.dropdown-icon1 {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  height: 28px;
+  width: 30px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 10px;
+  color: #666;
+}
+
+.logo {
+  height: 60px; /* Tamaño ajustado */
+  margin-right: 25px;
+  cursor: pointer;
+}
+
+/* Contenedor de ubicación */
+.location-container {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.location-icon {
+  font-size: 24px; /* Tamaño reducido */
+  margin-right: 8px;
+  color: #666;
+}
+
+.location-text {
+  font-size: 20px; /* Texto más pequeño y consistente */
+  font-weight: 700;
+  color: #333;
+}
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 20px;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 10px;
+  object-fit: cover;
+}
+
+.user-greeting {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+
+.dropdown-icon {
+  font-size: 22px;
+  margin-left: 5px;
+  color: #666;
+}
+
+/* Contenedor de búsqueda */
+.search-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  position: relative;
+  max-width: 700px; /* Ancho más compacto */
+}
+
+.search-bar {
+  flex: 1;
+  padding: 15px 55px 15px 25px;
+  border-radius: 30px;
+  border: 1px solid #ddd;
+  background-color: #fafafa;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar:focus {
+  outline: none;
+  border: 1px solid #5932ea;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(89, 50, 234, 0.1);
+}
+
+.search-icon {
+  position: absolute;
+  right: 15px;
+  font-size: 24px;
+  color: #9197b3;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.search-icon:hover {
+  color: #5932ea;
+}
+
+/* Icono de usuario */
+.user-icon {
+  font-size: 24px; /* Tamaño ajustado */
+  margin-left: 20px;
+  color: #5932ea; /* Cambiado a #5932ea como solicitado */
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.user-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Fondo Oscuro */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+  z-index: 999;
+}
+
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Menú Lateral */
+.barra-de-navegacin {
+  position: fixed;
+  top: 0;
+  left: -300px; /* Ajustado para un diseño compacto */
+  width: 300px;
+  height: 100%;
+  background-color: #ffffff;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+  transition: left 0.3s ease-in-out;
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.barra-de-navegacin.open {
+  left: 0;
+}
+
+/* Contenedor del Logo con botón de cierre */
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 25px 0;
+}
+
+.side-logo {
+  width: 150px; /* Tamaño ajustado */
+  height: auto;
+}
+
+.close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px; /* Tamaño ajustado */
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+  transition: transform 0.2s;
+}
+
+.close-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Elementos del Menú */
+.menu-items {
+  flex-grow: 1;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 25px; /* Espaciado reducido */
+  font-size: 18px;
+  font-weight: 400;
+  color: #444;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.menu-item img {
+  margin-right: 12px;
+  width: 32px;
+  height: 32px;
+}
+
+.menu-item .text-wrapper {
+  flex: 1;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.menu-item:hover {
+  background-color: #f0f0f5;
+}
+
+/* Íconos del menú */
+.img {
+  width: 35px;
+  height: 35px;
+  margin-right: 12px;
+  filter: grayscale(50%);
+  transition: filter 0.2s;
+}
+
+.img:hover {
+  filter: grayscale(0%);
+}
+
+.arrow-icon {
+  width: 16px;
+  height: 16px;
+  margin-left: auto;
+}
+
+/* Actividad */
+.activity-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 25px;
+  background-color: #f9f9f9;
+  font-size: 18px;
+}
+
+.label {
+  color: #84828a;
+}
+
+.label-2 {
+  color: #5932ea;
+}
+
+/* Logout */
+.logout-container {
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid #e0e0e0;
+}
+
+.logout-item {
+  display: flex;
+  align-items: center;
+  color: #84828a;
+  font-size: 20px;
+}
+
+.frame-2 {
+  width: 28px;
+  height: 28px;
+  margin-right: 10px;
+}
+
+#gerencia-select {
+  width: 50%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+  font-size: 16px;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+#gerencia-select:focus {
+  border-color: #4A148C;
+  outline: none;
+}
+
+#promotor-asignado {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #4A148C;
+}
+
+.dropdown-wrapper1 {
+  margin-top: 20px;
+  margin-left: 150px;
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-text {
+  font-size: 16px; /* Adjust size as needed */
+  color: #333; /* Adjust color as needed */
+}
+
+.dropdown-text1 {
+  font-size: 16px; /* Adjust size as needed */
+  color: rgb(255, 255, 255);
+}
+
+.dropdown-icon {
+  width: 18px; /* Adjust size as needed */
+  height: 10px; /* Adjust size as needed */
+}
+
+.white-bar1 {
+  width: calc(100% - 321px); /* Full width minus horizontal margin */
+  background-color: white;
+  text-align: center;
+  padding: 10px; /* Adjust padding as needed */
+  margin: 10px auto; /* Small horizontal margin */
+  border-radius: 10px; /* Rounded borders */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+  position: relative; /* Position the bar relative to the content */
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.title {
+  margin-top: 5px;
+  font-size: 26px; /* Adjust size as needed */
+  margin-bottom: 10px; /* Space between title and content */
+  color: rgb(136, 0, 248);
+}
+
+.green-text {
+  color: green;
+  font-size: 16px; /* Adjust size as needed */
+  margin-right: auto; /* Push to the left */
+}
+
+.content1 {
+  display: flex;
+  align-items: center; /* Center vertically */
+  width: 100%; /* Full width */
+  gap: 10px; /* Space between items */
+}
+
+.right-side2 {
+  display: flex;
+  align-items: center; /* Center vertically */
+  gap: 10px; /* Space between items */
+}
+
+.flex-grow {
+  flex-grow: 1; /* Allow the element to grow and take up remaining space */
+}
+
+.gray-bar2 {
+  display: flex;
+  align-items: center; /* Center vertically */
+  gap: 5px; /* Space between items */
+  background-color: #f0f0f0; /* Light gray background */
+  padding: 10px;
+  height: 17.5px;
+  border-radius: 5px; /* Rounded corners */
+}
+
+.gray-bar3 {
+  display: flex;
+  align-items: center; /* Center vertically */
+  gap: 5px; /* Space between items */
+  background-color: #8d22ea; /* Light gray background */
+  padding: 10px;
+  height: 17.5px;
+  border-radius: 5px; /* Rounded corners */
+}
+
+.small-image5 {
+  width: 20px; /* Adjust size as needed */
+  height: 20px; /* Adjust size as needed */
+}
+
+.small-image4 {
+  width: 28px; /* Adjust size as needed */
+  height: 24px; /* Adjust size as needed */
+}
+
+.gray-text {
+  color: gray;
+  font-size: 16px; /* Adjust size as needed */
+}
+
+.text14 {
+  font-size: 16px; /* Default font size */
+  font-weight: bold;
+  
+}
+
+.custom-table {
+  width: 100px;
+  border-collapse: collapse;
+  margin: 10px 0; /* Small margin */
+}
+
+.custom-table th,
+.custom-table td {
+  border: 1px solid #d3d3d3; /* Light gray border */
+  padding: 10px;
+  text-align: left;
+  text-align: center; /* Center text horizontally */
+  vertical-align: middle; /* Center text vertically */
+}
+
+.custom-table th {
+  background-color: #f0f0f0; /* Light gray background for headers */
+  color: #333; /* Darker text color for headers */
+}
+
+.status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px; /* Adjust size as needed */
+  height: 30px; /* Adjust size as needed */
+  border-radius: 5px; /* Rounded corners */
+  color: #fff; /* White text color */
+  font-weight: bold;
+}
+
+.status.green {
+  background-color: #83d5a9; /* Green background */
+  color: #006f2d; /* Darker green text */
+}
+
+.status.red {
+  background-color: #ea85a9; /* Red background */
+  color: #80002a; /* Darker red text */
+}
+
+.status.yellow {
+  background-color: #f1e2a5; /* Yellow background */
+  color: #c7aa05; /* Darker yellow text */
+}
+
+.additional-content {
+  display: flex;
+  justify-content: space-between; /* Space items evenly */
+  align-items: center; /* Center vertically */
+  width: 100%; /* Full width */
+  padding: 10px 20px; /* Padding around the content */
+}
+
+.small-square {
+  width: 30px; /* Adjust size as needed */
+  height: 30px; /* Adjust size as needed */
+  background-color: #d3d3d3; /* Light gray background */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin-right: 5px; /* Space between squares */
+  border-radius: 5px; /* Rounded corners */
+  font-weight: bold; /* Bold text */
+}
+
+.small-square2 {
+  width: 30px; /* Adjust size as needed */
+  height: 30px; /* Adjust size as needed */
+  background-color: #5D5FEF; /* Light gray background */
+  color: #ffffff;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin-right: 5px; /* Space between squares */
+  border-radius: 5px; /* Rounded corners */
+  font-weight: bold; /* Bold text */
+}
+
+.additional-right {
+  display: flex;
+  align-items: center; /* Center vertically */
+  gap: 5px; /* Space between items */
+}
+
+.rectangle {
+  display: flex;
+  align-items: center; /* Center vertically */
+  gap: 5px; /* Space between text and image */
+  height: 17.5px;
+  background-color: white;
+  border: 1px solid #d3d3d3; /* Light gray border */
+  padding: 10px;
+  border-radius: 5px; /* Rounded corners */
+}
+
+.text4 {
+  font-size: 16px; /* Default font size */
+}
+
+.small-image2 {
+  width: 20px; /* Adjust size as needed */
+  height: 20px; /* Adjust size as needed */
+}
+
+.small-image3 {
+  width: 20px; /* Adjust size as needed */
+  height: 8px; /* Adjust size as needed */
+}
+
+.small-image {
+  width: 50px; /* Adjust size as needed */
+  height: 40px; /* Adjust size as needed */
+}
+
+.small-image6 {
+  width: 50px; /* Adjust size as needed */
+  height: 50px; /* Adjust size as needed */
+}
+
+.small-image26 {
+  width: 7px; /* Adjust size as needed */
+  height: 30px; /* Adjust size as needed */
+}
+
+.dropdown-wrapper2 {
+  position: relative;
+  display: inline-block;
+  display: flex;
+  align-items: center; /* Center vertically */
+}
+
+.yellow-text {
+  color: #ffcc00; /* Yellow text color */
+  font-size: 16px; /* Default font size */
+}
+
+.red-text {
+  color: #ff0000; /* Yellow text color */
+  font-size: 16px; /* Default font size */
+}
+
+.importance-bar {
+  background-color: rgb(119, 35, 255); /* Purple background */
+  color: white; /* White text color */
+  padding: 5px 10px; /* Adjust padding as needed */
+  border-radius: 10px; /* Rounded corners */
+  text-align: center; /* Center text */
+  font-size: 16px; /* Adjust font size as needed */
+
+}
+
+.texto {
+  font-size: 16px;
+}
+
+.white-bar-rounded {
+  width: calc(100% - 300px); /* Full width minus horizontal margin */
+  background-color: white;
+  text-align: center;
+  padding: 10px 0; /* Adjust padding as needed */
+  margin: 10px auto; /* Small horizontal margin */
+  border-radius: 10px; /* Rounded borders */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+  position: relative; /* Position the bar relative to the content */
+}
+
+.gray-bar-container {
+  display: flex;
+  justify-content: center;
+  gap: 100px; /* Adjust gap as needed */
+}
+
+.gray-bar {
+  width: 25%; /* Adjust width as needed */
+  background-color: #ccc; /* Gray background */
+  padding: 10px 0; /* Adjust padding as needed */
+  border-radius: 5px; /* Rounded borders */
+  justify-content: center; 
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.gray-bar1 {
+  width: 25%; /* Adjust width as needed */
+  background-color: #ffffff; /* Gray background */
+  padding: 10px 0; /* Adjust padding as needed */
+  border-radius: 5px; /* Rounded borders */
+  justify-content: center; 
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.texto1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: -0.01em;
+  
+  color: #292D32;
+  }

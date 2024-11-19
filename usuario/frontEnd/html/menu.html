@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../css/menu/menu.css" />
+    <title>Menú Lateral Desplegable</title>
+  </head>
+  <body>
+    <!-- Fondo Oscuro -->
+    <div id="overlay" class="overlay"></div>
+
+    <!-- Menú Superior -->
+    <header class="top-header">
+      <button id="menu-toggle" class="menu-icon">&#9776;</button>
+      <img src="../img/imagix.png" alt="Imagix Logo" class="logo" />
+      <div class="location-container">
+        <span class="location-icon">📍</span>
+        <span class="location-text">Bogotá</span>
+        <span class="dropdown-icon">▼</span>
+      </div>
+      <div class="search-container">
+        <input type="text" placeholder="Buscar retos, ideas..." class="search-bar" />
+        <span class="search-icon">🔍</span>
+      </div>
+      <span class="user-icon">👤 Ingreso</span>
+    </header>
+
+    <!-- Menú Lateral -->
+    <div class="barra-de-navegacin" id="side-menu">
+      <button id="close-menu" class="close-icon">&times;</button>
+
+      <div class="logo-container">
+        <img src="../img/imagix.png" alt="Logo Imagix" class="side-logo" />
+      </div>
+
+      <nav class="menu-items">
+        <a href="../../Home/usuario-dashboard.html" class="menu-item">
+          <img class="img" src="../img/home.png" alt="Home" />
+          <span>Home</span>
+          <img class="arrow-icon" src="../img/rightarrow.png" />
+        </a>
+        <a href="../../Retos/verMisRetos-Dashboard.html" class="menu-item">
+          <img class="img" src="../img/Retos.png" alt="Retos" />
+          <span>Retos</span>
+          <img class="arrow-icon" src="../img/rightarrow.png" />
+        </a>
+        <a href="../../RetosMiArea/explorarRetos-dashboard.html" class="menu-item">
+          <img class="img" src="../img/Retos-area.png" alt="Retos por área" />
+          <span>Retos por área</span>
+          <img class="arrow-icon" src="../img/rightarrow.png" />
+        </a>
+        <a href="../../Sedes/index.html" class="menu-item">
+          <img class="img" src="../img/SesionesIdeacion.png" alt="Sesiones de ideación" />
+          <span>Sesiones de ideación</span>
+          <img class="arrow-icon" src="../img/rightarrow.png" />
+        </a>
+        <a href="../../SesionesDeIdeación/sesionesDeIdeacion.html" class="menu-item">
+          <img class="img" src="../img/sedes.png" alt="Sedes" />
+          <span>Sedes</span>
+          <img class="arrow-icon" src="../img/rightarrow.png" />
+        </a>
+      </nav>
+      
+
+      <div class="activity-container">
+        <span class="label">Actividad</span>
+        <span class="label-2">+25%</span>
+      </div>
+
+      <div class="logout-container">
+        <a href="#" class="logout-item">
+          <img class="frame-2" src="../img/logout.png" alt="Logout" />
+          <span>Logout</span>
+        </a>
+      </div>
+    </div>
+
+    <script src="../js/menu.js"></script>
+  </body>
+</html>

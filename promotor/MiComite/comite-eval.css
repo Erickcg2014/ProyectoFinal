@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+
+/* Variables de colores */
+:root {
+  --iris-80: rgba(120, 121, 241, 1);
+  --iris-100: rgba(93, 95, 239, 1);
+  --gray: rgba(58, 58, 73, 1);
+  --label-light-secondary: rgba(60, 60, 67, 0.6);
+  --light-indigo: rgba(116, 89, 217, 1);
+  --iris-60: rgba(165, 166, 246, 1);
+  --light-gray: #e0e0e0;
+}
+
+/* Estilo general */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  min-height: 100vh; 
+}
+
+#menu-container {
+  width: 100%; 
+  margin-bottom: 5px; /* Reducir espacio entre el menú y el frame */
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+}
+
+/* Estilos para el contenedor del marco */
+#frame-container {
+  background-color: #fff; 
+  border-radius: 12px; 
+  padding: 20px; 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+  width: 100%; 
+  max-width: 1200px; 
+  margin-top: 20px; 
+}
+
+/* Título principal */
+h1 {
+  color: var(--iris-100);
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 20px; /* Aumentar el espacio entre el título y los filtros */
+}
+
+/* Título secundario */
+h2 {
+  color: var(--iris-100); 
+  font-size: 1.8rem; 
+  font-weight: 800;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+/* Estilo del área de filtros */
+.filters {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 20px;
+}
+
+/* Dropdown de importancia con icono */
+.dropdown-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+#importance {
+  appearance: none;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px 40px 10px 12px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #fff;
+  color: #333;
+  transition: all 0.3s ease;
+  width: 180px;
+}
+
+.dropdown-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: var(--gray);
+}
+
+.search-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.search-input {
+  padding-left: 30px; /* Espacio para el ícono */
+  height: 30px; /* Ajusta la altura según sea necesario */
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none; 
+  font-size: 20px; 
+}
+
+
+input[type="text"] {
+  padding: 10px 12px 10px 36px; 
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 200px;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:hover {
+  border-color: var(--iris-80);
+}
+
+
+/* Tabla */
+table {
+  width: 100%;
+  border-collapse: collapse; /* Cambiar a collapse para líneas uniformes */
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+thead {
+  background-color: #fff;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  color: var(--gray);
+}
+
+th {
+  font-weight: 800;
+  border-bottom: 1px solid var(--light-gray); /* Línea gris clara debajo del encabezado */
+}
+
+tbody tr {
+  background-color: #fff;
+  border-bottom: 1px solid var(--light-gray); /* Línea gris clara entre filas */
+}
+
+/* Botón de evaluar */
+.evaluate-btn {
+  padding: 8px 16px;
+  background-color: var(--iris-80);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.evaluate-btn:hover {
+  background-color: var(--iris-100);
+}
+
+/* Paginación */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: var(--gray);
+  font-weight: 800;
+  margin-top: 10px;
+}
+
+.page-arrow {
+  cursor: pointer;
+  color: var(--iris-100);
+  font-size: 1.2rem;
+}
+
+/* Estilo del número de la página */
+#page-info {
+  font-size: 1rem;
+  width: 30px; 
+  height: 30px; 
+  border-radius: 50%; 
+  background-color: var(--iris-80); 
+  color: white; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+/* Estilo del cuadro de texto para el número de páginas */
+#rows-per-page {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 60px; 
+  cursor: text; 
+  transition: border-color 0.3s;
+  appearance: none; 
+}
+
+#rows-per-page:hover {
+  border-color: var(--iris-80);
+}

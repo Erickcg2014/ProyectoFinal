@@ -1,0 +1,1896 @@
+:root {
+  --iris-100: rgba(93, 95, 239, 1);
+  --label-light-secondary: rgba(60, 60, 67, 0.6);
+  --light-indigo: rgba(116, 89, 217, 1);
+}
+
+.asociacin-mapas {
+    background-color: #fafbff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .asociacin-mapas .overlap-wrapper {
+    background-color: #fafbff;
+    width: 1440px;
+    height: 1822px;
+  }
+  
+  .asociacin-mapas .overlap {
+    position: relative;
+    height: 1803px;
+  }
+  
+  .asociacin-mapas .overlap-group {
+    position: absolute;
+    width: 1440px;
+    height: 1803px;
+    top: 0;
+    left: 0;
+  }
+  
+  .asociacin-mapas .chevron-right {
+    top: 142px;
+    left: 252px;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+  }
+  
+  .asociacin-mapas .rectangle {
+    position: absolute;
+    width: 1138px;
+    height: 655px;
+    top: 1148px;
+    left: 302px;
+  }
+  
+  .asociacin-mapas .text-wrapper {
+    position: absolute;
+    height: 59px;
+    top: 1211px;
+    left: 709px;
+    transform: rotate(-0.21deg);
+    font-family: "Work Sans-Bold", Helvetica;
+    font-weight: 700;
+    color: var(--iris-100);
+    font-size: 50.2px;
+    letter-spacing: -1.00px;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .asociacin-mapas .barra-de-navegacin {
+    position: absolute;
+    width: 306px;
+    height: 1198px;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    box-shadow: 0px 10px 60px #e1ecf880;
+  }
+  
+  .asociacin-mapas .list-menu-wrapper {
+    position: absolute;
+    width: 250px;
+    height: 46px;
+    top: 556px;
+    left: 30px;
+    background-color: #5932ea;
+    border-radius: 8px;
+  }
+  
+  .asociacin-mapas .list-menu {
+    position: relative;
+    width: 236px;
+    height: 24px;
+    top: 10px;
+    left: 9px;
+  }
+  
+  .asociacin-mapas .img {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 0;
+    left: 0;
+  }
+  
+  .asociacin-mapas .div {
+    position: absolute;
+    top: 3px;
+    left: 41px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: -0.14px;
+    line-height: normal;
+  }
+  
+  .asociacin-mapas .chevron-right-2 {
+    top: 5px;
+    left: 218px;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+  }
+  
+  .asociacin-mapas .list-menu-2 {
+    position: absolute;
+    width: 231px;
+    height: 24px;
+    top: 139px;
+    left: 39px;
+  }
+  
+  .asociacin-mapas .text-wrapper-2 {
+    position: absolute;
+    top: 1px;
+    left: 38px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #9197b3;
+    font-size: 14px;
+    letter-spacing: -0.14px;
+    line-height: normal;
+  }
+  
+  .asociacin-mapas .chevron-right-3 {
+    top: 2px;
+    left: 213px;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+  }
+  
+  .asociacin-mapas .list-menu-3 {
+    position: absolute;
+    width: 233px;
+    height: 24px;
+    top: 203px;
+    left: 39px;
+  }
+  
+  .asociacin-mapas .text-wrapper-3 {
+    position: absolute;
+    top: 2px;
+    left: 38px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #9197b3;
+    font-size: 14px;
+    letter-spacing: -0.14px;
+    line-height: normal;
+  }
+  
+  .asociacin-mapas .chevron-right-4 {
+    top: 4px;
+    left: 215px;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+  }
+  
+  .asociacin-mapas .list-menu-4 {
+    position: absolute;
+    width: 233px;
+    height: 24px;
+    top: 267px;
+    left: 39px;
+  }
+  
+  .asociacin-mapas .overlap-2 {
+    position: absolute;
+    width: 233px;
+    height: 24px;
+    top: 331px;
+    left: 39px;
+  }
+  
+  .asociacin-mapas .list-menu-5 {
+    position: absolute;
+    width: 233px;
+    height: 24px;
+    top: 0;
+    left: 0;
+  }
+  
+  .asociacin-mapas .list-menu-6 {
+    position: absolute;
+    width: 231px;
+    height: 24px;
+    top: 0;
+    left: 0;
+  }
+  
+  .asociacin-mapas .list-menu-7 {
+    position: absolute;
+    width: 195px;
+    height: 21px;
+    top: 395px;
+    left: 77px;
+  }
+  
+  .asociacin-mapas .text-wrapper-4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #9197b3;
+    font-size: 14px;
+    letter-spacing: -0.14px;
+    line-height: normal;
+  }
+  
+  .asociacin-mapas .chevron-right-5 {
+    top: 2px;
+    left: 177px;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+  }
+  
+  .asociacin-mapas .list-menu-8 {
+    position: absolute;
+    width: 233px;
+    height: 24px;
+    top: 452px;
+    left: 39px;
+  }
+  
+  .asociacin-mapas .list-menu-9 {
+    position: absolute;
+    width: 195px;
+    height: 21px;
+    top: 511px;
+    left: 80px;
+  }
+  
+  .asociacin-mapas .list-menu-10 {
+    position: absolute;
+    width: 195px;
+    height: 21px;
+    top: 626px;
+    left: 80px;
+  }
+  
+  .asociacin-mapas .element-icon {
+    top: 511px;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 39px;
+  }
+  
+  .asociacin-mapas .overlap-group-2 {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    top: 3px;
+    left: 3px;
+  }
+  
+  .asociacin-mapas .path {
+    position: absolute;
+    width: 18px;
+    height: 9px;
+    top: 0;
+    left: 0;
+  }
+  
+
+  .asociacin-mapas .imagix {
+    position: absolute;
+    width: 226px;
+    height: 100px;
+    top: 11px;
+    left: 32px;
+    object-fit: cover;
+  }
+  
+  .asociacin-mapas .element-icon-stock {
+    top: 394px;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 39px;
+  }
+  
+  .asociacin-mapas .overlap-3 {
+    position: absolute;
+    width: 250px;
+    height: 80px;
+    top: 925px;
+    left: 28px;
+    background-image: url(./img/union.svg);
+    background-size: 100% 100%;
+  }
+  
+  .asociacin-mapas .label {
+    position: absolute;
+    top: 28px;
+    left: 101px;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: var(--label-light-secondary);
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 24px;
+    white-space: nowrap;
+  }
+  
+  .asociacin-mapas .label-2 {
+    position: absolute;
+    top: 30px;
+    left: 195px;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: var(--light-indigo);
+    font-size: 13px;
+    text-align: right;
+    letter-spacing: 0;
+    line-height: 18px;
+    white-space: nowrap;
+  }
+  
+  .asociacin-mapas .element {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 10px;
+    left: 24px;
+    object-fit: cover;
+  }
+  
+  .asociacin-mapas .frame {
+    display: flex;
+    width: 275px;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 165px 10px 10px;
+    position: absolute;
+    top: 1130px;
+    left: 24px;
+    border-radius: 8px;
+  }
+  
+  .asociacin-mapas .img-2 {
+    position: relative;
+    width: 24px;
+    height: 24px;
+  }
+  
+  .asociacin-mapas .text-wrapper-5 {
+    position: relative;
+    width: fit-content;
+    font-family: "Manrope-Medium", Helvetica;
+    font-weight: 500;
+    color: #84828a;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .asociacin-mapas .frame-2 {
+    position: absolute;
+    width: 1085px;
+    height: 528px;
+    top: 1230px;
+    left: 355px;
+  }
+  
+  .asociacin-mapas .group-wrapper {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    top: 623px;
+    left: 41px;
+  }
+  
+  .asociacin-mapas .overlap-group-3 {
+    position: absolute;
+    width: 16px;
+    height: 8px;
+    top: 4px;
+    left: 4px;
+  }
+  
+  .asociacin-mapas .ellipse {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top: 0;
+    left: 4px;
+    border-radius: 4px;
+    border: 2px solid;
+    border-color: #9197b3;
+  }
+  
+  .asociacin-mapas .ellipse-2 {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    top: 2px;
+    left: 10px;
+  }
+  
+  .asociacin-mapas .ellipse-3 {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    top: 2px;
+    left: 0;
+  }
+  
+  .asociacin-mapas .overlap-4 {
+    position: absolute;
+    width: 20px;
+    height: 7px;
+    top: 13px;
+    left: 2px;
+  }
+  
+  .asociacin-mapas .subtract {
+    position: absolute;
+    width: 9px;
+    height: 6px;
+    top: 0;
+    left: 11px;
+  }
+  
+  .asociacin-mapas .subtract-2 {
+    position: absolute;
+    width: 9px;
+    height: 6px;
+    top: 0;
+    left: 0;
+  }
+  
+  .asociacin-mapas .rectangle-2 {
+    position: absolute;
+    width: 12px;
+    height: 7px;
+    top: 0;
+    left: 4px;
+  }
+  
+  .asociacin-mapas .group {
+    position: absolute;
+    width: 1021px;
+    height: 483px;
+    top: 677px;
+    left: 373px;
+    box-shadow: 0px 4.62px 18.47px #0000000d;
+    background-image: url(./img/bounds.png);
+    background-size: 100% 100%;
+  }
+  
+  .asociacin-mapas .graph {
+    position: absolute;
+    width: 978px;
+    height: 440px;
+    top: 694px;
+    left: 373px;
+  }
+  
+  .asociacin-mapas .overlap-5 {
+    position: absolute;
+    width: 1024px;
+    height: 439px;
+    top: -23px;
+    left: 0;
+  }
+  
+  .asociacin-mapas .grid-base {
+    position: absolute;
+    width: 877px;
+    height: 393px;
+    top: 40px;
+    left: 71px;
+  }
+  
+  .asociacin-mapas .y {
+    position: absolute;
+    width: 76px;
+    height: 377px;
+    top: 49px;
+    left: 0;
+  }
+  
+  .asociacin-mapas .text-wrapper-6 {
+    position: absolute;
+    width: 49px;
+    top: 323px;
+    left: 7px;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #58578c;
+    font-size: 10.9px;
+    text-align: right;
+    letter-spacing: 0.39px;
+    line-height: normal;
+  }
+  
+  .asociacin-mapas .text-wrapper-7 {
+    width: 49px;
+    top: 363px;
+    left: 7px;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #58578c;
+    font-size: 10.9px;
+    text-align: right;
+    letter-spacing: 0.39px;
+    position: absolute;
+    line-height: normal;
+  }
+  
+  .asociacin-mapas .text-wrapper-8 {
+    width: 49px;
+    top: 282px;
+    left: 7px;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #58578c;
+    font-size: 10.9px;
+    text-align: right;
+    letter-spacing: 0.39px;
+    position: absolute;
+    line-height: normal;
+  }
+  
+  .asociacin-mapas .text-wrapper-9 {
+    width: 49px;
+    top: 242px;
+    left: 7px;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #58578c;
+    font-size: 10.9px;
+    text-align: right;
+    letter-spacing: 0.39px;
+    position: absolute;
+    line-height: normal;
+  }
+  
+  .asociacin-mapas .text-wrapper-10 {
+    width: 49px;
+    top: 202px;
+    left: 7px;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #58578c;
+    font-size: 10.9px;
+    text-align: right;
+    letter-spacing: 0.39px;
+    position: absolute;
+    line-height: normal;
+  }
+  
+  .asociacin-mapas .text-wrapper-11 {
+    width: 49px;
+    top: 161px;
+    left: 7px;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #58578c;
+    font-size: 10.9px;
+    text-align: right;
+    letter-spacing: 0.39px;
+    position: absolute;
+    line-height: normal;
+  }
+  
+  .asociacin-mapas .text-wrapper-12 {
+    width: 56px;
+    top: 121px;
+    left: 0;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #58578c;
+    font-size: 10.9px;
+    text-align: right;
+    letter-spacing: 0.39px;
+    position: absolute;
+    line-height: normal;
+  }
+  
+  .asociacin-mapas .text-wrapper-13 {
+    width: 56px;
+    top: 81px;
+    left: 0;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #58578c;
+    font-size: 10.9px;
+    text-align: right;
+    letter-spacing: 0.39px;
+    position: absolute;
+    line-height: normal;
+  }
+  
+  .asociacin-mapas .text-wrapper-14 {
+    width: 56px;
+    top: 40px;
+    left: 0;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #58578c;
+    font-size: 10.9px;
+    text-align: right;
+    letter-spacing: 0.39px;
+    position: absolute;
+    line-height: normal;
+  }
+  
+  .asociacin-mapas .text-wrapper-15 {
+    width: 56px;
+    top: 0;
+    left: 0;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #58578c;
+    font-size: 10.9px;
+    text-align: right;
+    letter-spacing: 0.39px;
+    position: absolute;
+    line-height: normal;
+  }
+  
+  .asociacin-mapas .glow-effect {
+    position: absolute;
+    width: 607px;
+    height: 400px;
+    top: 0;
+    left: 333px;
+  }
+  
+  .asociacin-mapas .path-4 {
+    position: absolute;
+    width: 888px;
+    height: 204px;
+    top: 161px;
+    left: 71px;
+  }
+  
+  .asociacin-mapas .path-5 {
+    position: absolute;
+    width: 901px;
+    height: 208px;
+    top: 154px;
+    left: 65px;
+  }
+  
+  .asociacin-mapas .glow-effect-2 {
+    position: absolute;
+    width: 1011px;
+    height: 359px;
+    top: 57px;
+    left: 12px;
+  }
+  
+  .asociacin-mapas .path-6 {
+    position: absolute;
+    width: 803px;
+    height: 159px;
+    top: 184px;
+    left: 74px;
+  }
+  
+  .asociacin-mapas .path-7 {
+    position: absolute;
+    width: 889px;
+    height: 210px;
+    top: 143px;
+    left: 70px;
+  }
+  
+  .asociacin-mapas .selected-value {
+    position: absolute;
+    width: 215px;
+    height: 416px;
+    top: 23px;
+    left: 454px;
+  }
+  
+  .asociacin-mapas .overlap-6 {
+    position: relative;
+    width: 225px;
+    height: 503px;
+    top: -71px;
+    left: -8px;
+  }
+  
+  .asociacin-mapas .blurred-container {
+    position: absolute;
+    width: 218px;
+    height: 503px;
+    top: 0;
+    left: 0;
+  }
+  
+  .asociacin-mapas .group-2 {
+    position: absolute;
+    width: 131px;
+    height: 373px;
+    top: 101px;
+    left: 44px;
+    background-image: url(./img/mask.png);
+    background-size: 100% 100%;
+  }
+  
+  .asociacin-mapas .overlap-group-wrapper {
+    position: absolute;
+    width: 83px;
+    height: 28px;
+    top: 110px;
+    left: 95px;
+  }
+  
+  .asociacin-mapas .overlap-group-4 {
+    position: relative;
+    height: 30px;
+    top: -1px;
+    left: -1px;
+    border-radius: 13.2px;
+    box-shadow: 0px 10.92px 12.74px #1f1d4181;
+    backdrop-filter: blur(16.88px) brightness(100%);
+    -webkit-backdrop-filter: blur(16.88px) brightness(100%);
+    background: linear-gradient(
+      180deg,
+      rgba(50.7, 46.6, 102.65, 0.44) 0%,
+      rgba(61.47, 59.7, 125.35, 0.4) 100%
+    );
+  }
+  
+  .asociacin-mapas .element-2 {
+    width: 47px;
+    top: 5px;
+    left: 24px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #cdcde9;
+    font-size: 12.7px;
+    letter-spacing: 0;
+    white-space: nowrap;
+    position: absolute;
+    line-height: normal;
+  }
+  
+  .asociacin-mapas .oval {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top: 11px;
+    left: 11px;
+    background-color: #fb49c0;
+    border-radius: 3.94px / 4.03px;
+  }
+  
+  .asociacin-mapas .div-wrapper {
+    position: absolute;
+    width: 83px;
+    height: 28px;
+    top: 145px;
+    left: 8px;
+  }
+  
+  .asociacin-mapas .overlap-7 {
+    position: relative;
+    width: 81px;
+    height: 28px;
+    border-radius: 13.2px;
+    box-shadow: 0px 10.92px 12.74px #1f1d4181;
+    backdrop-filter: blur(16.88px) brightness(100%);
+    -webkit-backdrop-filter: blur(16.88px) brightness(100%);
+    background: linear-gradient(
+      180deg,
+      rgba(50.7, 46.6, 102.65, 0.44) 0%,
+      rgba(61.47, 59.7, 125.35, 0.4) 100%
+    );
+  }
+  
+  .asociacin-mapas .element-3 {
+    width: 57px;
+    top: 5px;
+    left: 0;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #cdcde9;
+    font-size: 12.7px;
+    text-align: right;
+    letter-spacing: 0;
+    position: absolute;
+    line-height: normal;
+  }
+  
+  .asociacin-mapas .oval-2 {
+    width: 8px;
+    top: 10px;
+    left: 63px;
+    background-color: #f5a523;
+    border-radius: 3.94px / 4.03px;
+    position: absolute;
+    height: 8px;
+  }
+  
+  .asociacin-mapas .element-4 {
+    position: absolute;
+    width: 97px;
+    height: 28px;
+    top: 150px;
+    left: 127px;
+  }
+  
+  .asociacin-mapas .element-5 {
+    position: absolute;
+    width: 48px;
+    top: 6px;
+    left: 35px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #cdcde9;
+    font-size: 12.7px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .asociacin-mapas .oval-3 {
+    width: 11px;
+    top: 11px;
+    left: 14px;
+    background-color: #31afd6;
+    border-radius: 5.38px / 4.03px;
+    position: absolute;
+    height: 8px;
+  }
+  
+  .asociacin-mapas .legends {
+    position: absolute;
+    width: 254px;
+    height: 28px;
+    top: 42px;
+    left: 81px;
+  }
+  
+  .asociacin-mapas .group-copy {
+    width: 76px;
+    left: 88px;
+    position: absolute;
+    height: 28px;
+    top: 0;
+    overflow: hidden;
+  }
+  
+  .asociacin-mapas .overlap-group-5 {
+    position: relative;
+    width: 78px;
+    height: 30px;
+    top: -1px;
+    left: -1px;
+    background-color: #00000000;
+    border-radius: 13.2px;
+    backdrop-filter: blur(16.88px) brightness(100%);
+    -webkit-backdrop-filter: blur(16.88px) brightness(100%);
+  }
+  
+  .asociacin-mapas .ETH {
+    position: absolute;
+    width: 31px;
+    top: 6px;
+    left: 37px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #58578c;
+    font-size: 10.9px;
+    text-align: right;
+    letter-spacing: 0.39px;
+    line-height: normal;
+  }
+  
+  .asociacin-mapas .oval-4 {
+    width: 8px;
+    top: 11px;
+    left: 16px;
+    background-color: #31afd6;
+    border-radius: 3.94px / 4.03px;
+    position: absolute;
+    height: 8px;
+  }
+  
+  .asociacin-mapas .group-copy-2 {
+    width: 76px;
+    left: 178px;
+    position: absolute;
+    height: 28px;
+    top: 0;
+    overflow: hidden;
+  }
+  
+  .asociacin-mapas .LTC {
+    position: absolute;
+    width: 30px;
+    top: 6px;
+    left: 36px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #58578c;
+    font-size: 10.9px;
+    text-align: right;
+    letter-spacing: 0.39px;
+    line-height: normal;
+  }
+  
+  .asociacin-mapas .oval-5 {
+    width: 8px;
+    top: 11px;
+    left: 16px;
+    background-color: #f5a523;
+    border-radius: 3.94px / 4.03px;
+    position: absolute;
+    height: 8px;
+  }
+  
+  .asociacin-mapas .group-copy-3 {
+    width: 73px;
+    left: 0;
+    position: absolute;
+    height: 28px;
+    top: 0;
+    overflow: hidden;
+  }
+  
+  .asociacin-mapas .overlap-8 {
+    position: relative;
+    width: 75px;
+    height: 30px;
+    top: -1px;
+    left: -1px;
+    background-color: #00000000;
+    border-radius: 13.2px;
+    backdrop-filter: blur(16.88px) brightness(100%);
+    -webkit-backdrop-filter: blur(16.88px) brightness(100%);
+  }
+  
+  .asociacin-mapas .BTC {
+    position: absolute;
+    width: 40px;
+    top: 6px;
+    left: 34px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #58578c;
+    font-size: 10.9px;
+    text-align: right;
+    letter-spacing: 0.39px;
+    line-height: normal;
+  }
+  
+  .asociacin-mapas .oval-6 {
+    width: 8px;
+    top: 11px;
+    left: 16px;
+    background-color: #fb49c0;
+    border-radius: 3.94px / 4.03px;
+    position: absolute;
+    height: 8px;
+  }
+  
+  .asociacin-mapas .x {
+    position: absolute;
+    width: 912px;
+    height: 15px;
+    top: 425px;
+    left: 86px;
+  }
+  
+  .asociacin-mapas .element-pm {
+    position: absolute;
+    width: 50px;
+    top: 1px;
+    left: 0;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #58578c;
+    font-size: 10.9px;
+    text-align: center;
+    letter-spacing: 0.39px;
+    line-height: normal;
+  }
+  
+  .asociacin-mapas .element-6 {
+    position: absolute;
+    width: 50px;
+    top: 1px;
+    left: 89px;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #58578c;
+    font-size: 10.9px;
+    text-align: center;
+    letter-spacing: 0.39px;
+    line-height: normal;
+  }
+  
+  .asociacin-mapas .element-copy {
+    position: absolute;
+    width: 50px;
+    top: 1px;
+    left: 177px;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #58578c;
+    font-size: 10.9px;
+    text-align: center;
+    letter-spacing: 0.39px;
+    line-height: normal;
+  }
+  
+  .asociacin-mapas .element-am {
+    position: absolute;
+    width: 43px;
+    top: 1px;
+    left: 268px;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #58578c;
+    font-size: 10.9px;
+    text-align: center;
+    letter-spacing: 0.39px;
+    line-height: normal;
+  }
+  
+  .asociacin-mapas .element-7 {
+    position: absolute;
+    width: 43px;
+    top: 1px;
+    left: 357px;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #58578c;
+    font-size: 10.9px;
+    text-align: center;
+    letter-spacing: 0.39px;
+    line-height: normal;
+  }
+  
+  .asociacin-mapas .element-8 {
+    position: absolute;
+    width: 43px;
+    top: 1px;
+    left: 446px;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #58578c;
+    font-size: 10.9px;
+    text-align: center;
+    letter-spacing: 0.39px;
+    line-height: normal;
+  }
+  
+  .asociacin-mapas .element-9 {
+    position: absolute;
+    width: 43px;
+    top: 1px;
+    left: 535px;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #58578c;
+    font-size: 10.9px;
+    text-align: center;
+    letter-spacing: 0.39px;
+    line-height: normal;
+  }
+  
+  .asociacin-mapas .element-10 {
+    position: absolute;
+    width: 70px;
+    top: 0;
+    left: 609px;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #58578c;
+    font-size: 10.9px;
+    text-align: center;
+    letter-spacing: 0.39px;
+    line-height: normal;
+  }
+  
+  .asociacin-mapas .element-11 {
+    position: absolute;
+    width: 83px;
+    top: 0;
+    left: 712px;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #58578c;
+    font-size: 10.9px;
+    text-align: center;
+    letter-spacing: 0.39px;
+    line-height: normal;
+  }
+  
+  .asociacin-mapas .element-12 {
+    position: absolute;
+    width: 91px;
+    top: 0;
+    left: 801px;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #58578c;
+    font-size: 10.9px;
+    text-align: center;
+    letter-spacing: 0.39px;
+    line-height: normal;
+  }
+  
+  .asociacin-mapas .frame-3 {
+    display: flex;
+    width: 1061px;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 16px;
+    left: 329px;
+  }
+  
+  .asociacin-mapas .hola-erick-promotor {
+    position: relative;
+    width: 502px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: transparent;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .asociacin-mapas .span {
+    color: #000000;
+  }
+  
+  .asociacin-mapas .text-wrapper-16 {
+    color: #fe0404;
+  }
+  
+  .asociacin-mapas .frame-4 {
+    display: flex;
+    width: 480px;
+    align-items: center;
+    gap: 32px;
+    position: relative;
+  }
+  
+  .asociacin-mapas .group-3 {
+    position: relative;
+    width: 346px;
+    height: 40px;
+  }
+  
+  .asociacin-mapas .overlap-group-6 {
+    position: relative;
+    width: 344px;
+    height: 40px;
+    background-color: #fdfdfd;
+    border-radius: 8px;
+  }
+  
+  .asociacin-mapas .text-wrapper-17 {
+    position: absolute;
+    top: 12px;
+    left: 46px;
+    font-family: "Manrope-Regular", Helvetica;
+    font-weight: 400;
+    color: #a39f9f;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .asociacin-mapas .search-normal {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 12px;
+    left: 13px;
+  }
+  
+  .asociacin-mapas .ellipse-4 {
+    position: relative;
+    width: 48px;
+    height: 48px;
+  }
+  
+  .asociacin-mapas .text-wrapper-18 {
+    position: absolute;
+    height: 59px;
+    top: 601px;
+    left: 375px;
+    transform: rotate(-0.21deg);
+    font-family: "Work Sans-Bold", Helvetica;
+    font-weight: 700;
+    color: var(--iris-100);
+    font-size: 50.2px;
+    letter-spacing: -1.00px;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .asociacin-mapas .text-wrapper-19 {
+    position: absolute;
+    height: 59px;
+    top: 184px;
+    left: 798px;
+    transform: rotate(-0.21deg);
+    font-family: "Work Sans-Bold", Helvetica;
+    font-weight: 700;
+    color: #5d5fef;
+    font-size: 50.2px;
+    letter-spacing: -1.00px;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .asociacin-mapas .text-wrapper-20 {
+    position: absolute;
+    height: 59px;
+    top: 218px;
+    left: 380px;
+    transform: rotate(-0.21deg);
+    font-family: "Work Sans-Bold", Helvetica;
+    font-weight: 700;
+    color: #5d5fef;
+    font-size: 50.2px;
+    letter-spacing: -1.00px;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .asociacin-mapas .text-wrapper-21 {
+    position: absolute;
+    height: 59px;
+    top: 238px;
+    left: 1108px;
+    transform: rotate(-0.21deg);
+    font-family: "Work Sans-Bold", Helvetica;
+    font-weight: 700;
+    color: #5d5fef;
+    font-size: 50.2px;
+    letter-spacing: -1.00px;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .asociacin-mapas .earning {
+    position: absolute;
+    width: 1055px;
+    height: 100px;
+    top: 76px;
+    left: 356px;
+  }
+  
+  .asociacin-mapas .overlap-9 {
+    position: relative;
+    width: 1180px;
+    height: 220px;
+    top: -50px;
+    left: -60px;
+    background-image: url(./img/rectangle-15.svg);
+    background-size: 100% 100%;
+  }
+  
+  .asociacin-mapas #exito {
+    position: absolute;
+    width: 1100px;
+    top: 55px;
+    left: 100px;
+    font-family: "Port Lligat Slab-Regular", Helvetica;
+    font-weight: 500;
+    color: #000000a8;
+    font-size: 36px;
+    text-align: left;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .asociacin-mapas .overlap-10 {
+    position: absolute;
+    width: 1020px;
+    height: 312px;
+    top: 288px;
+    left: 364px;
+  }
+  
+  .asociacin-mapas .image {
+    width: 328px;
+    height: 157px;
+    top: 0;
+    left: 11px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .asociacin-mapas .image-2 {
+    width: 273px;
+    height: 165px;
+    top: 15px;
+    left: 719px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .asociacin-mapas .isolation-mode {
+    position: absolute;
+    width: 342px;
+    height: 106px;
+    top: 177px;
+    left: 678px;
+  }
+  
+  .asociacin-mapas .isolation-mode-2 {
+    position: absolute;
+    width: 349px;
+    height: 186px;
+    top: 126px;
+    left: 339px;
+    overflow: hidden;
+  }
+  
+  
+  .asociacin-mapas .overlap-11 {
+    position: absolute;
+    width: 349px;
+    height: 161px;
+    top: 0;
+    left: 0;
+    background-image: url(./img/vector-49.svg);
+    background-size: 100% 100%;
+  }
+  
+  .asociacin-mapas .overlap-group-7 {
+    position: absolute;
+    width: 349px;
+    height: 15px;
+    top: 0;
+    left: 0;
+  }
+  
+  .asociacin-mapas .vector {
+    position: absolute;
+    width: 349px;
+    height: 14px;
+    top: 0;
+    left: 0;
+  }
+  
+  .asociacin-mapas .vector-2 {
+    position: absolute;
+    width: 343px;
+    height: 2px;
+    top: 12px;
+    left: 3px;
+  }
+  
+  .asociacin-mapas .vector-3 {
+    position: absolute;
+    width: 338px;
+    height: 2px;
+    top: 12px;
+    left: 6px;
+  }
+  
+  .asociacin-mapas .vector-4 {
+    position: absolute;
+    width: 332px;
+    height: 2px;
+    top: 13px;
+    left: 9px;
+  }
+  
+  .asociacin-mapas .vector-5 {
+    position: absolute;
+    width: 326px;
+    height: 2px;
+    top: 13px;
+    left: 11px;
+  }
+  
+  .asociacin-mapas .vector-6 {
+    position: absolute;
+    width: 320px;
+    height: 2px;
+    top: 13px;
+    left: 14px;
+  }
+  
+  .asociacin-mapas .vector-7 {
+    position: absolute;
+    width: 315px;
+    height: 2px;
+    top: 13px;
+    left: 17px;
+  }
+  
+  .asociacin-mapas .vector-8 {
+    position: absolute;
+    width: 309px;
+    height: 2px;
+    top: 13px;
+    left: 20px;
+  }
+  
+  .asociacin-mapas .vector-9 {
+    position: absolute;
+    width: 303px;
+    height: 2px;
+    top: 13px;
+    left: 23px;
+  }
+  
+  .asociacin-mapas .vector-10 {
+    position: absolute;
+    width: 297px;
+    height: 2px;
+    top: 13px;
+    left: 26px;
+  }
+  
+  .asociacin-mapas .vector-11 {
+    position: absolute;
+    width: 292px;
+    height: 2px;
+    top: 13px;
+    left: 29px;
+  }
+  
+  .asociacin-mapas .vector-12 {
+    position: absolute;
+    width: 286px;
+    height: 2px;
+    top: 13px;
+    left: 32px;
+  }
+  
+  .asociacin-mapas .vector-13 {
+    position: absolute;
+    width: 280px;
+    height: 2px;
+    top: 13px;
+    left: 34px;
+  }
+  
+  .asociacin-mapas .vector-14 {
+    position: absolute;
+    width: 274px;
+    height: 2px;
+    top: 13px;
+    left: 37px;
+  }
+  
+  .asociacin-mapas .vector-15 {
+    position: absolute;
+    width: 269px;
+    height: 2px;
+    top: 13px;
+    left: 40px;
+  }
+  
+  .asociacin-mapas .vector-16 {
+    position: absolute;
+    width: 263px;
+    height: 2px;
+    top: 13px;
+    left: 43px;
+  }
+  
+  .asociacin-mapas .vector-17 {
+    position: absolute;
+    width: 257px;
+    height: 1px;
+    top: 13px;
+    left: 46px;
+  }
+  
+  .asociacin-mapas .vector-18 {
+    position: absolute;
+    width: 251px;
+    height: 1px;
+    top: 13px;
+    left: 49px;
+  }
+  
+  .asociacin-mapas .vector-19 {
+    position: absolute;
+    width: 246px;
+    height: 1px;
+    top: 13px;
+    left: 52px;
+  }
+  
+  .asociacin-mapas .vector-20 {
+    position: absolute;
+    width: 240px;
+    height: 1px;
+    top: 13px;
+    left: 55px;
+  }
+  
+  .asociacin-mapas .vector-21 {
+    position: absolute;
+    width: 234px;
+    height: 1px;
+    top: 13px;
+    left: 57px;
+  }
+  
+  .asociacin-mapas .vector-22 {
+    position: absolute;
+    width: 228px;
+    height: 1px;
+    top: 13px;
+    left: 60px;
+  }
+  
+  .asociacin-mapas .vector-23 {
+    position: absolute;
+    width: 223px;
+    height: 1px;
+    top: 13px;
+    left: 63px;
+  }
+  
+  .asociacin-mapas .vector-24 {
+    position: absolute;
+    width: 217px;
+    height: 1px;
+    top: 13px;
+    left: 66px;
+  }
+  
+  .asociacin-mapas .vector-25 {
+    position: absolute;
+    width: 211px;
+    height: 1px;
+    top: 13px;
+    left: 69px;
+  }
+  
+  .asociacin-mapas .vector-26 {
+    position: absolute;
+    width: 206px;
+    height: 1px;
+    top: 13px;
+    left: 72px;
+  }
+  
+  .asociacin-mapas .vector-27 {
+    position: absolute;
+    width: 200px;
+    height: 1px;
+    top: 13px;
+    left: 75px;
+  }
+  
+  .asociacin-mapas .text-wrapper-22 {
+    width: 123px;
+    height: 135px;
+    top: 25px;
+    left: 139px;
+    font-family: "Poppins-Bold", Helvetica;
+    font-weight: 700;
+    color: #df0404;
+    font-size: 150px;
+    letter-spacing: 0;
+    white-space: nowrap;
+    position: absolute;
+    line-height: normal;
+  }
+  
+  .asociacin-mapas .vector-28 {
+    position: absolute;
+    width: 349px;
+    height: 2px;
+    top: 7910px;
+    left: -18364px;
+  }
+  
+  .asociacin-mapas .isolation-mode-3 {
+    position: absolute;
+    width: 355px;
+    height: 123px;
+    top: 164px;
+    left: 659px;
+    overflow: hidden;
+  }
+  
+  .asociacin-mapas .vector-29 {
+    position: absolute;
+    width: 3px;
+    height: 91px;
+    top: 32px;
+    left: 0;
+  }
+  
+  .asociacin-mapas .vector-30 {
+    position: absolute;
+    width: 349px;
+    height: 3px;
+    top: 7906px;
+    left: -18681px;
+  }
+  
+  .asociacin-mapas .overlap-12 {
+    position: absolute;
+    width: 343px;
+    height: 123px;
+    top: 31px;
+    left: 6px;
+  }
+  
+  .asociacin-mapas .vector-31 {
+    position: absolute;
+    width: 343px;
+    height: 3px;
+    top: 15px;
+    left: 0;
+  }
+  
+  .asociacin-mapas .vector-32 {
+    position: absolute;
+    width: 337px;
+    height: 3px;
+    top: 15px;
+    left: 3px;
+  }
+  
+  .asociacin-mapas .vector-33 {
+    position: absolute;
+    width: 331px;
+    height: 3px;
+    top: 15px;
+    left: 6px;
+  }
+  
+  .asociacin-mapas .vector-34 {
+    position: absolute;
+    width: 326px;
+    height: 3px;
+    top: 15px;
+    left: 9px;
+  }
+  
+  .asociacin-mapas .vector-35 {
+    position: absolute;
+    width: 320px;
+    height: 2px;
+    top: 15px;
+    left: 11px;
+  }
+  
+  .asociacin-mapas .vector-36 {
+    position: absolute;
+    width: 314px;
+    height: 2px;
+    top: 15px;
+    left: 14px;
+  }
+  
+  .asociacin-mapas .vector-37 {
+    position: absolute;
+    width: 309px;
+    height: 2px;
+    top: 15px;
+    left: 17px;
+  }
+  
+  .asociacin-mapas .vector-38 {
+    position: absolute;
+    width: 303px;
+    height: 2px;
+    top: 15px;
+    left: 20px;
+  }
+  
+  .asociacin-mapas .vector-39 {
+    position: absolute;
+    width: 297px;
+    height: 2px;
+    top: 15px;
+    left: 23px;
+  }
+  
+  .asociacin-mapas .vector-40 {
+    position: absolute;
+    width: 291px;
+    height: 2px;
+    top: 15px;
+    left: 26px;
+  }
+  
+  .asociacin-mapas .vector-41 {
+    position: absolute;
+    width: 286px;
+    height: 2px;
+    top: 15px;
+    left: 29px;
+  }
+  
+  .asociacin-mapas .vector-42 {
+    position: absolute;
+    width: 280px;
+    height: 2px;
+    top: 16px;
+    left: 32px;
+  }
+  
+  .asociacin-mapas .vector-43 {
+    position: absolute;
+    width: 274px;
+    height: 2px;
+    top: 16px;
+    left: 34px;
+  }
+  
+  .asociacin-mapas .vector-44 {
+    position: absolute;
+    width: 268px;
+    height: 2px;
+    top: 16px;
+    left: 37px;
+  }
+  
+  .asociacin-mapas .vector-45 {
+    position: absolute;
+    width: 263px;
+    height: 2px;
+    top: 16px;
+    left: 40px;
+  }
+  
+  .asociacin-mapas .vector-46 {
+    position: absolute;
+    width: 257px;
+    height: 2px;
+    top: 16px;
+    left: 43px;
+  }
+  
+  .asociacin-mapas .vector-47 {
+    position: absolute;
+    width: 251px;
+    height: 2px;
+    top: 16px;
+    left: 46px;
+  }
+  
+  .asociacin-mapas .vector-48 {
+    position: absolute;
+    width: 245px;
+    height: 2px;
+    top: 16px;
+    left: 49px;
+  }
+  
+  .asociacin-mapas .vector-49 {
+    position: absolute;
+    width: 240px;
+    height: 1px;
+    top: 16px;
+    left: 52px;
+  }
+  
+  .asociacin-mapas .vector-50 {
+    position: absolute;
+    width: 234px;
+    height: 1px;
+    top: 16px;
+    left: 54px;
+  }
+  
+  .asociacin-mapas .vector-51 {
+    position: absolute;
+    width: 228px;
+    height: 1px;
+    top: 16px;
+    left: 57px;
+  }
+  
+  .asociacin-mapas .vector-52 {
+    position: absolute;
+    width: 223px;
+    height: 1px;
+    top: 16px;
+    left: 60px;
+  }
+  
+  .asociacin-mapas .vector-53 {
+    position: absolute;
+    width: 217px;
+    height: 1px;
+    top: 16px;
+    left: 63px;
+  }
+  
+  .asociacin-mapas .vector-54 {
+    position: absolute;
+    width: 211px;
+    height: 1px;
+    top: 16px;
+    left: 66px;
+  }
+  
+  .asociacin-mapas .vector-55 {
+    position: absolute;
+    width: 205px;
+    height: 1px;
+    top: 16px;
+    left: 69px;
+  }
+  
+  .asociacin-mapas .vector-56 {
+    position: absolute;
+    width: 200px;
+    height: 1px;
+    top: 16px;
+    left: 72px;
+  }
+  
+  .asociacin-mapas .text-wrapper-23 {
+    width: 123px;
+    top: 0;
+    left: 148px;
+    font-family: "Poppins-Bold", Helvetica;
+    font-weight: 700;
+    color: #df0404;
+    font-size: 70px;
+    letter-spacing: 0;
+    position: absolute;
+    line-height: normal;
+  }
+  
+  .asociacin-mapas .isolation-mode-4 {
+    position: absolute;
+    width: 356px;
+    height: 144px;
+    top: 131px;
+    left: 0;
+  }
+  
+  .asociacin-mapas .text-wrapper-24 {
+    width: 122px;
+    top: 143px;
+    left: 150px;
+    font-family: "Poppins-Bold", Helvetica;
+    font-weight: 700;
+    color: #df0404;
+    font-size: 100px;
+    letter-spacing: 0;
+    position: absolute;
+    line-height: normal;
+  }
+  
+  .asociacin-mapas .image-3 {
+    width: 327px;
+    height: 159px;
+    top: 253px;
+    left: 727px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .blurred-container{
+    position: absolute;
+    width: 131.04px;
+    height: 415.7px;
+    left: 862.95px;
+    top: 693.99px;
+
+    background: linear-gradient(180deg, rgba(51, 47, 103, 0.14) 2.1%, rgba(69, 65, 133, 0.25) 57.45%, rgba(78, 76, 162, 0.0586787) 98.26%);
+    box-shadow: 0px -27.3001px 43.6802px rgba(26, 24, 53, 0.506567);
+    backdrop-filter: blur(7.90488px);
+  }

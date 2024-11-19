@@ -1,0 +1,205 @@
+/* Importar fuentes de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo general del body */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f5f5;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login {
+  display: flex;
+  width: 75%; /* Ajuste del ancho */
+  height: 80vh; /* Ajuste del alto */
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Sección izquierda */
+.left {
+  width: 50%;
+  position: relative;
+  background-color: #e5e5e5;
+}
+
+.left .background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Centrar logo y texto horizontalmente */
+.logo-social-login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: white;
+}
+
+.logo .vector {
+  width: 60px;
+  height: auto;
+}
+
+.puedes-hacer-magia {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+/* Sección derecha */
+.right {
+  width: 50%;
+  background-color: white;
+  padding: 30px; /* Ajuste del padding para más espacio */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.right img.imagix {
+  width: 220px; /* Reducir ligeramente el tamaño del logo */
+  margin-bottom: 15px;
+}
+
+.wrapper {
+  width: 85%;
+}
+
+/* Estilo del formulario */
+.text {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.text .text-wrapper {
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+}
+
+.text p {
+  font-size: 18px;
+  color: #777;
+}
+
+.form {
+  margin-bottom: 20px;
+}
+
+.name,
+.mobile-number {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px; /* Espacio más compacto entre campos */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 8px; /* Reducir padding */
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.name input,
+.mobile-number input {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  width: 100%;
+}
+
+/* Ajuste del select */
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 3px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #f8f9fb;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  outline: none;
+}
+
+select:focus {
+  border-color: #6a1b9a;
+  box-shadow: 0 0 8px rgba(106, 27, 154, 0.3);
+}
+
+/* Labels ajustados */
+.name label {
+  font-weight: 500;
+  margin-bottom: 3px;
+  display: block;
+  color: #333;
+}
+
+/* Botón de registro */
+.button-base {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #6a1b9a;
+  color: white;
+  padding: 14px; /* Ajustar padding */
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  width: 100%;
+}
+
+.button-base:hover {
+  background-color: #4a148c;
+  transform: scale(1.05);
+}
+
+.button-base img {
+  width: 18px;
+  margin-left: 8px;
+}
+
+/* Enlace para iniciar sesión */
+.element-nd {
+  margin-top: 10px; /* Ajuste del margen superior */
+}
+
+.element-nd a {
+  text-decoration: none;
+  color: #6a1b9a;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.element-nd a:hover {
+  color: #4a148c;
+}
+
+/* Adaptación para dispositivos móviles */
+@media (max-width: 768px) {
+  .right {
+    width: 90%;
+    padding: 25px; /* Ajustar padding en dispositivos móviles */
+  }
+
+  .login {
+    height: auto;
+    flex-direction: column;
+  }
+}

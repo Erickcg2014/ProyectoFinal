@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sesionesDeIdeacion</title>
+    <link rel="stylesheet" href="../css/sesionesDeIdeacion.css">
+    <link rel="stylesheet" href="../css/menu.css">
+</head>
+<body>
+    <!-- Menú -->
+    <body>
+        <!-- Menú Superior -->
+        <header class="top-header">
+          <button id="menu-toggle" class="menu-icon">&#9776;</button>
+          <img src="../img/imagix.png" alt="Imagix Logo" class="logo" />
+          <div class="location-container">
+            <span class="location-icon">📍</span>
+            <div class="dropdown-wrapper">
+              <select id="sede-select" class="sede-dropdown">
+                <option value="">Cargando sedes...</option>
+              </select>
+              <span class="dropdown-icon">▼</span>
+            </div>
+          </div>
+          <div class="search-container">
+            <input type="text" placeholder="Buscar retos, ideas..." class="search-bar" />
+            <span class="search-icon">🔍</span>
+          </div>
+          <div class="user-info">
+            <img class="profile-pic" src="../img/ProfilePicture.png" alt="Foto de Perfil" />
+            <div class="user-greeting" id="nombre-usuario">Hola👋🏼, Usuario</div>
+          </div>
+        </header>
+    
+        <!-- Menú Lateral -->
+        <div class="barra-de-navegacin" id="side-menu">
+          <button id="close-menu" class="close-icon">&times;</button>
+          <div class="logo-container">
+            <img src="../img/imagix.png" alt="Logo Imagix" class="side-logo" />
+          </div>
+          <nav class="menu-items">
+            <a href="./usuario-dashboard.html" class="menu-item">
+              <img class="img" src="../img/home.png" alt="Home" />
+              <span>Home</span>
+              <img class="arrow-icon" src="../img/rightarrow.png" />
+            </a>
+            <a href="../Retos/verMisRetos-Dashboard.html" class="menu-item">
+              <img class="img" src="../img/Retos.png" alt="Retos" />
+              <span>Retos</span>
+              <img class="arrow-icon" src="../img/rightarrow.png" />
+            </a>
+            <a href="../RetosMiArea/explorarRetos-dashboard.html" class="menu-item">
+              <img class="img" src="../img/Retos-area.png" alt="Retos de mi sede" />
+              <span>Retos por área</span>
+              <img class="arrow-icon" src="../img/rightarrow.png" />
+            </a>
+            <a href="../Sedes/index.html" class="menu-item">
+              <img class="img" src="../img/SesionesIdeacion.png" alt="Sesiones de ideación" />
+              <span>Sesiones de ideación</span>
+              <img class="arrow-icon" src="../img/rightarrow.png" />
+            </a>
+            <a href="../SesionesDeIdeación/sesionesDeIdeacion.html" class="menu-item">
+              <img class="img" src="../img/sedes.png" alt="Sedes" />
+              <span>Sedes</span>
+              <img class="arrow-icon" src="../img/rightarrow.png" />
+            </a>
+          </nav>
+          <div class="activity-container">
+            <span class="label">Actividad</span>
+            <span class="label-2">+25%</span>
+          </div>
+          <div class="logout-container">
+            <a href="#" class="logout-item">
+              <img class="frame-2" src="../img/logout.png" alt="Logout" />
+              <span>Logout</span>
+            </a>
+          </div>
+        </div>
+
+    <!-- Contenido de la página -->
+    <div class="container">
+        <h1>Sesiones de ideación</h1>
+
+        <!-- Filtros -->
+        <div class="filters">
+            <select name="estado" id="estado">
+                <option value="">Estado</option>
+            </select>
+            <input type="date" id="fechaProgramada">
+            <input type="text" placeholder="Buscar por usuario">
+            <button class="filter-button">Filtrar</button>
+        </div>
+
+        <!-- Tabla -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Estado</th>
+                    <th>Fecha Programada</th>
+                    <th>Hora Inicio</th>
+                    <th>Hora Fin</th>
+                    <th>ID Reto</th>
+                    <th>Customer Name</th>
+                    <th>Importancia</th>
+                    <th>Revisar</th>
+                    <th>Editar</th>
+                    <th>Eliminar</th>
+                    <th>Opciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="status asistida">Asistida</span></td>
+                    <td>21-03-2024</td>
+                    <td>16:00</td>
+                    <td>17:45</td>
+                    <td>1798745</td>
+                    <td>Luz Marina Gómez</td>
+                    <td>Baja</td>
+                    <td><button class="join-button">Unirse</button></td>
+                    <td><button class="edit-button">✏️</button></td>
+                    <td><button class="delete-button">🗑️</button></td>
+                    <td>⋮</td>
+                </tr>
+                <!-- Más filas aquí -->
+            </tbody>
+        </table>
+
+        <!-- Paginación -->
+        <div class="pagination">
+            <span>Page</span>
+            <input type="number" value="1" min="1">
+            <span>/ 30</span>
+        </div>
+    </div>
+
+    <script src="../Home/usuario-dashboard.js"></script>
+    <script src="../frontEnd/js/menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dashboard retos por area - Imagix</title>
+    <link rel="stylesheet" href="./style_dashboard-retos-por-area.css" />
+  </head>
+  <body>
+    <!-- Menú Superior -->
+    <header class="top-header">
+      <button id="menu-toggle" class="menu-icon">&#9776;</button>
+      <img src="../img/imagix.webp" alt="Imagix Logo" class="logo" />
+      <div class="location-container">
+        <span class="location-icon">📍</span>
+        <div class="dropdown-wrapper">
+          <select id="sede-select" class="sede-dropdown">
+            <option value="">Cargando sedes...</option>
+          </select>
+          <span class="dropdown-icon">▼</span>
+        </div>
+      </div>
+      <div class="search-container">
+        <input type="text" placeholder="Buscar retos, ideas..." class="search-bar" />
+        <span class="search-icon">🔍</span>
+      </div>
+      <div class="user-info">
+        <img class="profile-pic" src="../img/pfp.png" alt="Foto de Perfil" />
+        <div class="user-greeting" id="nombre-usuario">Hola👋🏼, Usuario</div>
+      </div>
+    </header>
+
+    <!-- Menú Lateral -->
+    <div class="barra-de-navegacin" id="side-menu">
+      <button id="close-menu" class="close-icon">&times;</button>
+      <div class="logo-container">
+        <img src="../img/imagix.png" alt="Logo Imagix" class="side-logo" />
+      </div>
+      <nav class="menu-items">
+        <a href="../Home/dashboard-principal.html" class="menu-item">
+          <img class="img" src="../img/home.png" alt="Home" />
+          <span>Home</span>
+          <img class="arrow-icon" src="../img/rightarrow.png" />
+        </a>
+        <a href="../Retos/dashboard_retos.html" class="menu-item">
+          <img class="img" src="../img/Retos.png" alt="Retos" />
+          <span>Retos de mi sede</span>
+          <img class="arrow-icon" src="../img/rightarrow.png" />
+        </a>
+        <a href="../RetosPorArea/dashboard_retos_por_area.html" class="menu-item">
+            <img class="img" src="../img/Retos.png" alt="Retos" />
+            <span>Retos por área</span>
+            <img class="arrow-icon" src="../img/rightarrow.png" />
+          </a>
+        <a href="../MisRetosAsignados/retos_asignados.html" class="menu-item">
+          <img class="img" src="../img/Retos-area.png" alt="Retos de mi sede" />
+          <span>Mis retos asignados</span>
+          <img class="arrow-icon" src="../img/rightarrow.png" />
+        </a>
+        <a href="../RetosClasificados/retos_clasificados.html" class="menu-item">
+            <img class="img" src="../img/Retos-area.png" alt="Retos de mi sede" />
+            <span>Retos clasificados</span>
+            <img class="arrow-icon" src="../img/rightarrow.png" />
+          </a>
+        <a href="../SesionesIdeacion/sesiones_de_ideacion.html" class="menu-item">
+          <img class="img" src="../img/SesionesIdeacion.png" alt="Sesiones de ideación" />
+          <span>Sesiones de ideación</span>
+          <img class="arrow-icon" src="../img/rightarrow.png" />
+        </a>
+        <a href="../Repositorio/repositorio.html" class="menu-item">
+            <img class="img" src="../img/Retos-area.png" alt="Retos de mi sede" />
+            <span>Repositorio</span>
+            <img class="arrow-icon" src="../img/rightarrow.png" />
+          </a>
+        <a href="../Sedes/asociacion-map.html" class="menu-item">
+          <img class="img" src="../img/sedes.png" alt="Sedes" />
+          <span>Sedes</span>
+          <img class="arrow-icon" src="../img/rightarrow.png" />
+        </a>
+        <a href="../MiComite/comite-eval.html" class="menu-item">
+            <img class="img" src="../img/SesionesIdeacion.png" alt="Sesiones de ideación" />
+            <span>Mi comite</span>
+            <img class="arrow-icon" src="../img/rightarrow.png" />
+          </a>
+      </nav>
+      <div class="activity-container">
+        <span class="label">Actividad</span>
+        <span class="label-2">+25%</span>
+      </div>
+      <div class="logout-container">
+        <a href="#" class="logout-item">
+          <img class="frame-2" src="../img/logout.png" alt="Logout" />
+          <span>Logout</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="white-bar-rounded">
+      <div class="gray-bar-container">
+        <div class="gray-bar1">
+          <span class="texto1">Tu área está avanzando de gran manera, no te quedes atrás</span>
+        </div>
+        <div class="gray-bar">
+          <span class="texto1">27 de Septiembre</span>
+        </div>
+        <div class="gray-bar">
+          <span class="texto1">Innovación</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="white-bar-container">
+      <div class="white-bar-rounded-left">
+        <h2>Retos Activos</h2>
+        <div class="content">
+          <img src="../img/circle.webp" alt="Imagen" class="left-image" />
+          <div class="text-container">
+            <div class="text-with-bar">
+              <div class="purple-bar1"></div>
+              <span class="text-bold-large">Resueltos recientemente</span>
+            </div>
+            <span class="textm">24 retos</span>
+            <div class="text-with-bar">
+              <div class="purple-bar2"></div>
+              <span class="text-bold-large">Pendientes por revisión</span>
+            </div>
+            <span class="textm">13 retos</span>
+            <div class="text-with-bar">
+              <div class="purple-bar3"></div>
+              <span class="text-bold-large">Atrasados</span>
+            </div>
+            <span class="textm">6 retos</span>
+          </div>
+        </div>
+      </div>
+      <div class="white-bar-rounded-half">
+        <h2 class="title">Mayor actividad en retos</h2>
+        <div class="content">
+          <img src="../img/pfp10.png" alt="Foto de perfil" class="profile-picture" />
+          <div class="name-and-image">
+            <span class="name">Juan Carlos </span>
+            <img src="../img/load1.png" alt="Pequeña imagen" class="small-image" />
+          </div>
+          <span class="text2">74% Retos</span>
+        </div>
+        <div class="content">
+          <img src="../img/pfp11.png" alt="Foto de perfil" class="profile-picture" />
+          <div class="name-and-image">
+            <span class="name">Vannesa Orduz</span>
+            <img src="../img/load2.png" alt="Pequeña imagen" class="small-image" />
+          </div>
+          <span class="text2">52% Retos</span>
+        </div>
+        <div class="content">
+          <img src="../img/pfp12.png" alt="Foto de perfil" class="profile-picture" />
+          <div class="name-and-image">
+            <span class="name">Vicente Fernandez</span>
+            <img src="../img/load3.png" alt="Pequeña imagen" class="small-image" />
+          </div>
+          <span class="text2">36% Retos</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="white-bar-rounded">
+      <div class="content1">
+        <div class="left-side">
+          <span class="text3">Progreso del mes</span>
+          <img src="../img/warning.png" alt="Pequeña imagen izquierda" class="small-image2" />
+        </div>
+        <div class="right-side">
+          <span class="text5">Retos pendientes</span>
+          <div class="gray-bar10"></div>
+          <span class="text-purple">Retos resueltos</span>
+          <div class="purple-bar"></div>
+          <div class="rectangle">
+            <span class="text4">March 2020</span>
+            <img src="../img/calendary.png" alt="Pequeña imagen rectángulo" class="small-image2" />
+          </div>
+          <div class="square">
+            <img src="../img/3points.png" alt="Pequeña imagen cuadrado" class="small-image2" />
+          </div>
+        </div>
+      </div>
+      <div class="large-image-container">
+        <img src="../img/stats2.png" alt="Imagen grande" class="large-image" />
+      </div>
+    </div>
+
+    <div class="parent-container">
+      <div class="large-squares-container">
+        <div class="large-square">
+          <div class="top-content">
+            <img src="../img/pfp2.png" alt="Foto de perfil" class="profile-picture-large" />
+            <span class="text-top">Nuevo Helado</span>
+          </div>
+          <span class="text-middle">“Formar un helado de chocolate con vainilla y lleve chispas de minichips”</span>
+          <span class="text-bottom">IMPORTANTE</span>
+        </div>
+        <div class="large-square">
+          <div class="top-content">
+            <img src="../img/pfp3.png" alt="Foto de perfil" class="profile-picture-large" />
+            <span class="text-top">Nuevo Helado</span>
+          </div>
+          <span class="text-middle">“Formar un helado de chocolate con vainilla y lleve chispas de minichips”</span>
+          <span class="text-bottom">IMPORTANTE</span>
+        </div>
+        <div class="large-square">
+          <div class="top-content">
+            <img src="../img/pfp4.png" alt="Foto de perfil" class="profile-picture-large" />
+            <span class="text-top">Nuevo Helado</span>
+          </div>
+          <span class="text-middle">“Formar un helado de chocolate con vainilla y lleve chispas de minichips”</span>
+          <span class="text-bottom">IMPORTANTE</span>
+        </div>
+        <div class="large-square">
+          <div class="top-content">
+            <img src="../img/pfp5.png" alt="Foto de perfil" class="profile-picture-large" />
+            <span class="text-top">Nuevo Helado</span>
+          </div>
+          <span class="text-middle">“Formar un helado de chocolate con vainilla y lleve chispas de minichips”</span>
+          <span class="text-bottom">IMPORTANTE</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="white-bar1">
+      <h2 class="title">Todos los retos</h2>
+      <div class="content1">
+        <span class="green-text">Miembros activos</span>
+        <div class="right-side2">
+          <div class="gray-bar2">
+            <img src="../img/search.png" alt="Pequeña imagen gris" class="small-image5" />
+            <span class="gray-text">Buscar</span>
+          </div>
+          <div class="gray-bar2">
+            <span class="gray-text">Ordenar por:</span>
+            <span class="text14">Importancia</span>
+            <img src="../img/open.png" alt="Pequeña imagen gris 2" class="small-image3" />
+          </div>
+        </div>
+      </div>
+      <!-- Tabla de 6x9 -->
+      <div class="table-container">
+        <table class="custom-table">
+          <thead>
+            <tr>
+              <th>Customer Name</th>
+              <th>Area</th>
+              <th>Importancia</th>
+              <th>Fecha</th>
+              <th>Sede/Ciudad</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Filas de ejemplo -->
+            <tr>
+              <td>Luis Carlos</td>
+              <td>Recursos H.</td>
+              <td>Urgente</td>
+              <td>luiscarlos@gmail.com</td>
+              <td>Bogotá</td>
+              <td><div class="status green">Activo</div></td>
+            </tr>
+            <tr>
+              <td>Luz Marina</td>
+              <td>Producción</td>
+              <td>Alta</td>
+              <td>luzmarina@gmail.com</td>
+              <td>Bogotá</td>
+              <td><div class="status red">Inactivo</div></td>
+            </tr>
+            <tr>
+              <td>María del carmen</td>
+              <td>Finanzas</td>
+              <td>Alta</td>
+              <td>maria123@gmail.com</td>
+              <td>Bogotá</td>
+              <td><div class="status yellow">Pendiente</div></td>
+            </tr>
+            <tr>
+              <td>Juan Pérez</td>
+              <td>Marketing</td>
+              <td>Media</td>
+              <td>juanperez@gmail.com</td>
+              <td>Medellín</td>
+              <td><div class="status green">Activo</div></td>
+            </tr>
+            <tr>
+              <td>Ana Gómez</td>
+              <td>Ventas</td>
+              <td>Baja</td>
+              <td>anagomez@gmail.com</td>
+              <td>Cali</td>
+              <td><div class="status red">Inactivo</div></td>
+            </tr>
+            <tr>
+              <td>Carlos Ruiz</td>
+              <td>Logística</td>
+              <td>Media</td>
+              <td>carlosruiz@gmail.com</td>
+              <td>Barranquilla</td>
+              <td><div class="status yellow">Pendiente</div></td>
+            </tr>
+            <tr>
+              <td>Laura Martínez</td>
+              <td>Desarrollo</td>
+              <td>Alta</td>
+              <td>lauramartinez@gmail.com</td>
+              <td>Bogotá</td>
+              <td><div class="status green">Activo</div></td>
+            </tr>
+            <tr>
+              <td>Pedro Sánchez</td>
+              <td>Calidad</td>
+              <td>Urgente</td>
+              <td>pedrosanchez@gmail.com</td>
+              <td>Medellín</td>
+              <td><div class="status red">Inactivo</div></td>
+            </tr>
+            <tr>
+              <td>Elena Rodríguez</td>
+              <td>Investigación</td>
+              <td>Media</td>
+              <td>elenarodriguez@gmail.com</td>
+              <td>Cali</td>
+              <td><div class="status yellow">Pendiente</div></td>
+            </tr>
+            <!-- Agregar más filas según sea necesario -->
+          </tbody>
+        </table>
+      </div>
+      <div class="additional-content">
+        <span class="gray-text">Mostrando datos 1 to 8 of  256K entries</span>
+        <div class="additional-right">
+          <div class="small-square"><</div>
+          <div class="small-square2">1</div>
+          <div class="small-square">2</div>
+          <div class="small-square">3</div>
+          <div class="small-square">4</div>
+          <span class="right-text">...</span>
+          <div class="small-square">40</div>
+          <div class="small-square">></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contenido Principal del Dashboard de la pantalla que vayan a hacer -->
+    <script src="../menu/menu.js"></script>
+    <script src="../menu/usuario-dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,209 @@
+/* Estilos generales para el título */
+.section-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #4A148C;
+    text-align: center;
+    margin: 40px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Contenedor del Carrusel */
+.carrusel-retos {
+    margin: 40px auto;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Estilos de Swiper */
+.swiper-container {
+    width: 100%;
+    padding: 40px 60px; /* Espacio para los botones */
+    overflow: hidden;
+    position: relative;
+}
+
+
+/* Contenedor de slides */
+.swiper-wrapper {
+    display: flex;
+    align-items: center;
+    transition-timing-function: ease-out;
+}
+
+/* Centrado de la tarjeta */
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    opacity: 0.3;
+    transition: opacity 0.3s ease;
+}
+
+.swiper-slide-active {
+    opacity: 1;
+}
+
+/* Estilos de cada tarjeta en el carrusel */
+.tarjeta {
+    width: 100%;
+    max-width: 500px;
+    min-height: 350px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 10px 40px rgba(74, 20, 140, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    transition: all 0.3s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 50px rgba(74, 20, 140, 0.15);
+}
+
+/* Estilos para la imagen */
+.tarjeta img {
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.tarjeta h3 {
+    font-size: 24px;
+    color: #4A148C;
+    margin: 0;
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+}
+
+.tarjeta .descripcion {
+    font-size: 16px;
+    color: #666;
+    margin: 0;
+    line-height: 1.6;
+    width: 100%;
+    text-align: center;
+}
+
+.tarjeta .cargo {
+    font-size: 14px;
+    color: #666;
+    font-weight: 500;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+
+/* Botones de navegación mejorados */
+.swiper-button-next,
+.swiper-button-prev {
+    background-image: none !important;
+    font-size: 0 !important;
+    width: 40px;
+    height: 40px;
+    background-color: #4A148C;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    content: '' !important; /* Forzamos que no use el contenido predeterminado */
+    width: 12px;
+    height: 12px;
+    border-right: 2.5px solid white;
+    border-bottom: 2.5px solid white;
+    position: absolute;
+    background-image: none !important; /* Aseguramos que no haya imagen de fondo */
+}
+
+
+.swiper-button-next::after {
+    transform: rotate(-45deg);
+    margin-left: -2px;
+}
+
+.swiper-button-prev::after {
+    transform: rotate(135deg);
+    margin-left: 2px;
+}
+
+.swiper-button-next {
+    right: 10px;
+}
+
+.swiper-button-prev {
+    left: 10px;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background-color: #6A1B9A;
+    transform: translateY(-50%) scale(1.1);
+}
+
+/* Estado deshabilitado de los botones */
+.swiper-button-disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Estilo para cuando no hay datos */
+.no-data {
+    text-align: center;
+    padding: 40px;
+    color: #666;
+}
+
+/* Ajustes responsive */
+@media (max-width: 768px) {
+    .carrusel-retos {
+        padding: 10px;
+    }
+    
+    .swiper-container {
+        padding: 20px 40px;
+    }
+    
+    .tarjeta {
+        min-height: 300px;
+        padding: 20px;
+    }
+    
+    .tarjeta img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: 35px;
+        height: 35px;
+    }
+}

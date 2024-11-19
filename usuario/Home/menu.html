@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Usuario Dashboard - Imagix</title>
+    <link rel="stylesheet" href="../frontEnd/css/menu/menu.css" />
+  </head>
+  <body>
+    <!-- Menú Superior -->
+    <header class="top-header">
+      <button id="menu-toggle" class="menu-icon">&#9776;</button>
+      <img src="../img/imagix.png" alt="Imagix Logo" class="logo" />
+      <div class="location-container">
+        <span class="location-icon">📍</span>
+        <div class="dropdown-wrapper">
+          <select id="sede-select" class="sede-dropdown">
+            <option value="">Cargando sedes...</option>
+          </select>
+          <span class="dropdown-icon">▼</span>
+        </div>
+      </div>
+      <div class="search-container">
+        <input type="text" placeholder="Buscar retos, ideas..." class="search-bar" />
+        <span class="search-icon">🔍</span>
+      </div>
+      <div class="user-info">
+        <img class="profile-pic" src="../img/ProfilePicture.png" alt="Foto de Perfil" />
+        <div class="user-greeting" id="nombre-usuario">Hola👋🏼, Usuario</div>
+      </div>
+    </header>
+
+    <!-- Menú Lateral -->
+    <div class="barra-de-navegacin" id="side-menu">
+      <button id="close-menu" class="close-icon">&times;</button>
+      <div class="logo-container">
+        <img src="../img/imagix.png" alt="Logo Imagix" class="side-logo" />
+      </div>
+      <nav class="menu-items">
+        <a href="./usuario-dashboard.html" class="menu-item">
+          <img class="img" src="../img/home.png" alt="Home" />
+          <span>Home</span>
+          <img class="arrow-icon" src="../img/rightarrow.png" />
+        </a>
+        <a href="../Retos/verMisRetos-Dashboard.html" class="menu-item">
+          <img class="img" src="../img/Retos.png" alt="Retos" />
+          <span>Retos</span>
+          <img class="arrow-icon" src="../img/rightarrow.png" />
+        </a>
+        <a href="../RetosMiArea/explorarRetos-dashboard.html" class="menu-item">
+          <img class="img" src="../img/Retos-area.png" alt="Retos de mi sede" />
+          <span>Retos por área</span>
+          <img class="arrow-icon" src="../img/rightarrow.png" />
+        </a>
+        <a href="../Sedes/index.html" class="menu-item">
+          <img class="img" src="../img/SesionesIdeacion.png" alt="Sesiones de ideación" />
+          <span>Sesiones de ideación</span>
+          <img class="arrow-icon" src="../img/rightarrow.png" />
+        </a>
+        <a href="../SesionesDeIdeación/sesionesDeIdeacion.html" class="menu-item">
+          <img class="img" src="../img/sedes.png" alt="Sedes" />
+          <span>Sedes</span>
+          <img class="arrow-icon" src="../img/rightarrow.png" />
+        </a>
+      </nav>
+      <div class="activity-container">
+        <span class="label">Actividad</span>
+        <span class="label-2">+25%</span>
+      </div>
+      <div class="logout-container">
+        <a href="#" class="logout-item">
+          <img class="frame-2" src="../img/logout.png" alt="Logout" />
+          <span>Logout</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Contenido Principal del Dashboard de la pantalla que vayan a hacer -->
+    <script src="../frontEnd/js/menu.js"></script>
+</body>
+</html>
