@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Retos Asignados - Imagix</title>
+    <link rel="stylesheet" href="./style_retos-asignados.css" />
+    <link rel="stylesheet" href="../menu/menu.css" />
+  </head>
+  <body>
+    <!-- Menú Superior -->
+    <header class="top-header">
+      <button id="menu-toggle" class="menu-icon">&#9776;</button>
+      <img src="../img/imagix.webp" alt="Imagix Logo" class="logo" />
+      <div class="location-container">
+        <span class="location-icon">📍</span>
+        <div class="dropdown-wrapper">
+          <select id="sede-select" class="sede-dropdown">
+            <option value="">Cargando sedes...</option>
+          </select>
+          <span class="dropdown-icon">▼</span>
+        </div>
+      </div>
+      <div class="search-container">
+        <input type="text" placeholder="Buscar retos, ideas..." class="search-bar" />
+        <span class="search-icon">🔍</span>
+      </div>
+      <div class="user-info">
+        <img class="profile-pic" src="../img/pfp.png" alt="Foto de Perfil" />
+        <div class="user-greeting" id="nombre-usuario">Hola👋🏼, Usuario</div>
+      </div>
+    </header>
+
+    <!-- Tabla de Retos -->
+    <div class="table-container">
+      <h2>Mis Retos Asignados</h2>
+      <table class="custom-table">
+        <thead>
+          <tr>
+            <th>Título</th>
+            <th>Área</th>
+            <th>Importancia</th>
+            <th>Fecha de Asignación</th>
+            <th>Estado</th>
+            <th>Usuario</th> <!-- Nueva columna para username -->
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="retos-body">
+          <!-- Los retos serán insertados dinámicamente -->
+        </tbody>
+      </table>
+    </div>
+
+    <script src="./retos-asignados.js"></script>
+  </body>
+</html>
