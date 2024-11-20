@@ -766,6 +766,64 @@ app.post('/api/verificar-similitud', async (req, res) => {
   }
 });
 
+//Retos-asignados promotor----------------------------------------
+app.get('/api/retos-asignados', async (req, res) => {
+    const { idUsuario, limite, pagina } = req.query;
+  
+    try {
+      if (!idUsuario) {
+        return res.status(400).json({ error: 'El ID del usuario es obligatorio.' });
+      }
+  
+      // Paginación
+      const limit = parseInt(limite, 10) || 10; // Número de retos por página (por defecto 10)
+      const page = parseInt(pagina, 10) || 1; // Página actual (por defecto 1)
+      const offset = (page - 1) * limit; // Calcula el desplazamiento
+  
+      const query = `
+        SELECT 
+          r.id,
+          r.titulo,
+          rp.nombre AS area,
+          r.importancia,
+          r.estado,
+          r.fecha_asignacion
+        FROM retos r
+        JOIN roles_promotor rp ON r.id_rol_promotor = rp.id
+        WHERE r.id_promotor = $1
+        ORDER BY r.fecha_asignacion DESC
+        LIMIT $2 OFFSET $3
+      `;
+  
+      const totalQuery = `
+        SELECT COUNT(*) AS total
+        FROM retos
+        WHERE id_promotor = $1
+      `;
+  
+      // Consultar retos con paginación
+      const retosResult = await pool.query(query, [idUsuario, limit, offset]);
+  
+      // Consultar el total de retos asignados
+      const totalResult = await pool.query(totalQuery, [idUsuario]);
+  
+      const totalRetos = parseInt(totalResult.rows[0].total, 10);
+      const totalPaginas = Math.ceil(totalRetos / limit);
+  
+      res.status(200).json({
+        retos: retosResult.rows,
+        paginacion: {
+          paginaActual: page,
+          totalPaginas,
+          totalRetos,
+        },
+      });
+    } catch (error) {
+      console.error('Error al obtener los retos asignados:', error);
+      res.status(500).json({ error: 'Error al obtener los retos asignados.' });
+    }
+  });
+  
 
 //EXPORTAR LOS RETOS PARA EL EXCEL
 app.get('/api/retos/exportar-excel', async (req, res) => {
@@ -865,3 +923,7 @@ app.get('/promotor', authenticateToken, (req, res) => {
 app.listen(PORT, () => {
   console.log(`Servidor corriendo en http://localhost:${PORT}`);
 });
+
+
+
+  

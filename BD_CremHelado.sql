@@ -70,7 +70,7 @@ CREATE TABLE IF NOT EXISTS información_clientes_internos (
     FOREIGN KEY (sede) REFERENCES sedes(id),
     FOREIGN KEY (id_area) REFERENCES roles_promotor(id)
 );
-
+//
 CREATE TABLE informacion_evaluador (
     id_evaluador INTEGER PRIMARY KEY,
     nombre_completo VARCHAR(100) NOT NULL,
